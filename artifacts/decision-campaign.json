@@ -1,0 +1,12 @@
+{
+  "seed": 20261012,
+  "configurations": 500,
+  "complete_decoder_policies_checked": 3182,
+  "differences": 0,
+  "input_sha256": "25dfb82f92a3bd5a290c0ea9b70b632a7207c5865879cda66e42b400622f42ba",
+  "source_sha256": {
+    "tools/decision_campaign.py": "309585de963d30ff8fc0fff92e72e5c3e6f14070899208887bcae6b6df46753e",
+    "echoproof/decision.py": "a9c3055af32f90b1aad636cc0276a0af1acf37d8b8685d1aeb5459012259c54c"
+  },
+  "scope": "500 finite singleton domains, 2..6 integer values, nonnegative integer weights including zeros, threshold task. Oracle enumerates every true/false output policy and scores individual inputs directly; no majority-histogram or task-answer function is called by the oracle. Event grouping uses the separately checked core encoder. No human or population claim."
+}

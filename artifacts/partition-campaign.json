@@ -1,0 +1,14 @@
+{
+  "seed": 20261012,
+  "configurations": 1000,
+  "preserved": 163,
+  "capacity_impossible": 837,
+  "sequences_checked": 1956,
+  "differences": 0,
+  "input_sha256": "a339dfd2885af12dc81b335a2191c79fd6b07dc79897aac227508dfc7f7705f6",
+  "source_sha256": {
+    "tools/partition_campaign.py": "f81f2d9d084ba5c465891cbb3a7c44d009b7d9807f9bc3ceeca11e965d95874e",
+    "echoproof/partition.py": "5e74806e54ffbcbb6629df3eb9e7e397a38f4163104f2c8a5fd11b7195ccf5a2"
+  },
+  "scope": "Integer pitch spans 1..300 cents, steps 1..400, rational thresholds, fixed seed. Finite independent alphabet enumeration and direct task-answer oracle; not a continuous proof, human study, or universal fuzzing claim."
+}

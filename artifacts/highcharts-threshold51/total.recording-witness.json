@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "claim_type": "compiled_recording_collision",
+  "backend": {
+    "name": "Highcharts 13.1.1",
+    "scope": "Original internal mapping functions, mapped instrument parameters/time only. Manual point/metrics/channel inputs; no Chart, full timeline, speech, AudioContext or playback.",
+    "instrumentation": "Append exports for four original internal functions in memory. Original source files unchanged; all helpers imported from original source.",
+    "producer_sha256": "04b34513525a2fe26d038d85533f298857111e3570280fa2c6e94acc17b5385c",
+    "source_sha256": {
+      "Extensions/Sonification/TimelineFromChart.js": "4091b7d98f3319eb10c5b2f2917c4e70a677acf9b5acbc3c4ef834c3c4a89c10",
+      "Extensions/Sonification/SonificationTimeline.js": "576853be5b121ed0babba46eef078530237c2e7d432621e5893b07bb21d35960",
+      "Extensions/Sonification/SonificationInstrument.js": "6f8bbf32bf1d34bbec555dbba4c03b3adc3c9df5853cfb9fd6fc892c092d4064",
+      "Extensions/Sonification/SonificationSpeaker.js": "e602460f2c2c55bb697d3f3ad995b203ea8d13e7d1174f1f24f3807f7cb65b05",
+      "Core/Templating.js": "8209e06496639239ff5625ffdd3487de504558e0ad7c0a3ff6074d2bd24d836c",
+      "Shared/Utilities.js": "8d01f858c6297bdbbf9cc3590e8fe37ea33228d4b7c4bf59fc45c5eee21cc575",
+      "Extensions/Sonification/TimelineChannel.js": "14067cdfb4a404b9e7e29d5c47ae541bc5b7e7942dd52073b1d3cbe12dd1743b",
+      "Extensions/Sonification/MIDI.js": "3fcfbbc05ac548d69cc50a2b331ceeff16ff67ff72c48a5ba4c3f257a27a70cd",
+      "Shared/DownloadURL.js": "4e10635782633252effac67cc7a6d4af2c9533010fca7ad1a5a9133e90e5ddc9",
+      "Extensions/Sonification/SynthPatch.js": "094d06fc0034e2c92fe692484eda2d2153ed83f2c64275362331f69914f17633",
+      "Extensions/Sonification/InstrumentPresets.js": "005b436402febd41c7d4f3771e9b930b0a4104fdc76eceda3174c0ca36dd7d9b",
+      "Core/Defaults.js": "9974219125f494958f7203f378a9d6e6ce5442fa784e071fc53692cec0dbfd91",
+      "Core/Globals.js": "cf7e7d21b5164ccc135f8d1fb4af762e2e627370a36578018cb15459f1307c0e",
+      "Core/Utilities.js": "7aaa930beaf36e561d0989cb2ed26392a6fa022cb9a572f6952ceae41bf71655",
+      "Core/Chart/ChartDefaults.js": "6dddffaab568f1688fc62eca28433dbe06cfbee048d4bb847005615bda2ad6a5",
+      "Core/Color/PaletteDefaults.js": "57303708faff9e561441d71b4a7b6f7f033f75ac9b06f220a53140781fefa4f7",
+      "Core/Time.js": "b194e99afdde1788136497e75f7179a667b16baf501b96a36f5b75828b044483",
+      "Shared/TimeBase.js": "4ac1aa021de9234c56874d726aba10d449aafbf1dd803c9e2cea1bf30fe46a6c"
+    }
+  },
+  "audit_scope": "highcharts_mapped_instrument",
+  "task": "total",
+  "task_basis": "original_input_series_before_transforms",
+  "threshold": "51",
+  "left": {
+    "input": [
+      49,
+      49,
+      50
+    ],
+    "mapping": {
+      "mapTo": "y",
+      "min": 48,
+      "max": 84,
+      "within": "chart",
+      "scale": [
+        0
+      ]
+    },
+    "metrics": {
+      "globalExtremes": {
+        "y": {
+          "min": 0,
+          "max": 100
+        },
+        "x": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "seriesExtremes": [
+        {
+          "y": {
+            "min": 49,
+            "max": 50
+          },
+          "x": {
+            "min": 0,
+            "max": 2
+          }
+        }
+      ]
+    },
+    "roundToMusicalNotes": true,
+    "events": [
+      {
+        "time": 0,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 60
+        }
+      },
+      {
+        "time": 240,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 60
+        }
+      },
+      {
+        "time": 480,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 72
+        }
+      }
+    ]
+  },
+  "right": {
+    "input": [
+      49,
+      49,
+      51
+    ],
+    "mapping": {
+      "mapTo": "y",
+      "min": 48,
+      "max": 84,
+      "within": "chart",
+      "scale": [
+        0
+      ]
+    },
+    "metrics": {
+      "globalExtremes": {
+        "y": {
+          "min": 0,
+          "max": 100
+        },
+        "x": {
+          "min": 0,
+          "max": 2
+        }
+      },
+      "seriesExtremes": [
+        {
+          "y": {
+            "min": 49,
+            "max": 51
+          },
+          "x": {
+            "min": 0,
+            "max": 2
+          }
+        }
+      ]
+    },
+    "roundToMusicalNotes": true,
+    "events": [
+      {
+        "time": 0,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 60
+        }
+      },
+      {
+        "time": 240,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 60
+        }
+      },
+      {
+        "time": 480,
+        "instrumentEventOptions": {
+          "noteDuration": 180,
+          "pan": 0,
+          "volume": 0.2,
+          "note": 72
+        }
+      }
+    ]
+  },
+  "left_answer": "148",
+  "right_answer": "149",
+  "projection": [
+    {
+      "time": 0,
+      "instrumentEventOptions": {
+        "noteDuration": 180,
+        "pan": 0,
+        "volume": 0.2,
+        "note": 60
+      }
+    },
+    {
+      "time": 240,
+      "instrumentEventOptions": {
+        "noteDuration": 180,
+        "pan": 0,
+        "volume": 0.2,
+        "note": 60
+      }
+    },
+    {
+      "time": 480,
+      "instrumentEventOptions": {
+        "noteDuration": 180,
+        "pan": 0,
+        "volume": 0.2,
+        "note": 72
+      }
+    }
+  ],
+  "projection_sha256": "fb1307688d7ab43729f1aa720ba15944b775af8c2953ef7e0f541bb3727cf934",
+  "scope": "Recorded compiler-output equality and task mismatch only. The verifier does not rerun the backend or certify the input-to-output association. Tone and mapped-instrument scopes are partial; Erie full queue scope includes recorded speech."
+}

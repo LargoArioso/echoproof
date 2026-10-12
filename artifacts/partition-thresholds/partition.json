@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "claim_type": "nonuniform_threshold_partition",
+  "original_mapping": {
+    "domain_low": "0",
+    "domain_high": "100",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "input_low": "0",
+  "input_high": "100",
+  "thresholds": [
+    "50",
+    "51"
+  ],
+  "cutpoints": [
+    "50",
+    "51"
+  ],
+  "available_pitches_cents": [
+    4800,
+    6000,
+    7200,
+    8400
+  ],
+  "lower_bound": {
+    "required_pitch_symbols": 3,
+    "singleton_representatives": [
+      "0",
+      "50",
+      "51"
+    ],
+    "distinct_answer_vectors": [
+      [
+        false,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        true
+      ]
+    ],
+    "scope": "Exactly one pitch event per sample, fixed onset and duration, no other data-bearing channel. Bound follows from distinct singleton answer vectors."
+  },
+  "scope": "All positive-length series of real values in the declared closed interval, no missing samples. Monotone nonuniform bins, inclusive threshold boundaries, original pitch vocabulary and fixed timing retained. Each event preserves every requested threshold predicate, hence occurrence indices and counts as well as any/all decisions. Event-level sufficiency only; no human listening claim or numerical-value recovery.",
+  "status": "preserved",
+  "selected_pitches_cents": [
+    4800,
+    7200,
+    8400
+  ],
+  "reason": "Every requested nonconstant threshold is a bin boundary; the construction attains the scoped alphabet lower bound"
+}

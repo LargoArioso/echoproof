@@ -1,0 +1,1585 @@
+{
+  "schema_version": 1,
+  "claim_type": "finite_task_audit",
+  "engine_version": "0.1.0",
+  "mapping": {
+    "domain_low": "300",
+    "domain_high": "450",
+    "normalization": "per_series",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 100,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "domain": {
+    "series": [
+      [
+        "15799/50",
+        "31691/100",
+        "7941/25"
+      ],
+      [
+        "31691/100",
+        "7941/25",
+        "6369/20"
+      ],
+      [
+        "7941/25",
+        "6369/20",
+        "31899/100"
+      ],
+      [
+        "6369/20",
+        "31899/100",
+        "15981/50"
+      ],
+      [
+        "31899/100",
+        "15981/50",
+        "8001/25"
+      ],
+      [
+        "15981/50",
+        "8001/25",
+        "32137/100"
+      ],
+      [
+        "8001/25",
+        "32137/100",
+        "16109/50"
+      ],
+      [
+        "32137/100",
+        "16109/50",
+        "6461/20"
+      ],
+      [
+        "16109/50",
+        "6461/20",
+        "16231/50"
+      ],
+      [
+        "6461/20",
+        "16231/50",
+        "8142/25"
+      ],
+      [
+        "16231/50",
+        "8142/25",
+        "8158/25"
+      ],
+      [
+        "8142/25",
+        "8158/25",
+        "16373/50"
+      ],
+      [
+        "8158/25",
+        "16373/50",
+        "8242/25"
+      ],
+      [
+        "16373/50",
+        "8242/25",
+        "33019/100"
+      ],
+      [
+        "8242/25",
+        "33019/100",
+        "33113/100"
+      ],
+      [
+        "33019/100",
+        "33113/100",
+        "33203/100"
+      ],
+      [
+        "33113/100",
+        "33203/100",
+        "8346/25"
+      ],
+      [
+        "33203/100",
+        "8346/25",
+        "33541/100"
+      ],
+      [
+        "8346/25",
+        "33541/100",
+        "8421/25"
+      ],
+      [
+        "33541/100",
+        "8421/25",
+        "8469/25"
+      ],
+      [
+        "8421/25",
+        "8469/25",
+        "8503/25"
+      ],
+      [
+        "8469/25",
+        "8503/25",
+        "8537/25"
+      ],
+      [
+        "8503/25",
+        "8537/25",
+        "6863/20"
+      ],
+      [
+        "8537/25",
+        "6863/20",
+        "34487/100"
+      ],
+      [
+        "6863/20",
+        "34487/100",
+        "6927/20"
+      ],
+      [
+        "34487/100",
+        "6927/20",
+        "34761/100"
+      ],
+      [
+        "6927/20",
+        "34761/100",
+        "34931/100"
+      ],
+      [
+        "34761/100",
+        "34931/100",
+        "35169/100"
+      ],
+      [
+        "34931/100",
+        "35169/100",
+        "1766/5"
+      ],
+      [
+        "35169/100",
+        "1766/5",
+        "7089/20"
+      ],
+      [
+        "1766/5",
+        "7089/20",
+        "3557/10"
+      ],
+      [
+        "7089/20",
+        "3557/10",
+        "17827/50"
+      ],
+      [
+        "3557/10",
+        "17827/50",
+        "35721/100"
+      ],
+      [
+        "17827/50",
+        "35721/100",
+        "8974/25"
+      ],
+      [
+        "35721/100",
+        "8974/25",
+        "36097/100"
+      ],
+      [
+        "8974/25",
+        "36097/100",
+        "18137/50"
+      ],
+      [
+        "36097/100",
+        "18137/50",
+        "9097/25"
+      ],
+      [
+        "18137/50",
+        "9097/25",
+        "9171/25"
+      ],
+      [
+        "9097/25",
+        "9171/25",
+        "18427/50"
+      ],
+      [
+        "9171/25",
+        "18427/50",
+        "36971/100"
+      ],
+      [
+        "18427/50",
+        "36971/100",
+        "9283/25"
+      ],
+      [
+        "36971/100",
+        "9283/25",
+        "7469/20"
+      ],
+      [
+        "9283/25",
+        "7469/20",
+        "18799/50"
+      ],
+      [
+        "7469/20",
+        "18799/50",
+        "3777/10"
+      ],
+      [
+        "18799/50",
+        "3777/10",
+        "18999/50"
+      ],
+      [
+        "3777/10",
+        "18999/50",
+        "38209/100"
+      ],
+      [
+        "18999/50",
+        "38209/100",
+        "19201/50"
+      ],
+      [
+        "38209/100",
+        "19201/50",
+        "38583/100"
+      ],
+      [
+        "19201/50",
+        "38583/100",
+        "9691/25"
+      ],
+      [
+        "38583/100",
+        "9691/25",
+        "3901/10"
+      ],
+      [
+        "9691/25",
+        "3901/10",
+        "7837/20"
+      ],
+      [
+        "3901/10",
+        "7837/20",
+        "19703/50"
+      ],
+      [
+        "7837/20",
+        "19703/50",
+        "19837/50"
+      ],
+      [
+        "19703/50",
+        "19837/50",
+        "39881/100"
+      ],
+      [
+        "19837/50",
+        "39881/100",
+        "40101/100"
+      ],
+      [
+        "39881/100",
+        "40101/100",
+        "40441/100"
+      ],
+      [
+        "40101/100",
+        "40441/100",
+        "10169/25"
+      ],
+      [
+        "40441/100",
+        "10169/25",
+        "10218/25"
+      ],
+      [
+        "10169/25",
+        "10218/25",
+        "8233/20"
+      ],
+      [
+        "10218/25",
+        "8233/20",
+        "41421/100"
+      ],
+      [
+        "8233/20",
+        "41421/100",
+        "41641/100"
+      ],
+      [
+        "41421/100",
+        "41641/100",
+        "41853/100"
+      ],
+      [
+        "41641/100",
+        "41853/100",
+        "10527/25"
+      ],
+      [
+        "41853/100",
+        "10527/25",
+        "42461/100"
+      ],
+      [
+        "10527/25",
+        "42461/100",
+        "8547/20"
+      ]
+    ],
+    "threshold": "400",
+    "provenance": {
+      "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+      "raw_sha256": "bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b",
+      "credit": "Xin Lan, NOAA/GML, and Ralph Keeling, Scripps Institution of Oceanography; early measurements by C. David Keeling/SIO. Original archive comments retained.",
+      "method": "Every consecutive 3-year window, values copied unchanged from archived annual means. No synthetic mutations, scaling, resampling or uncertainty perturbation.",
+      "units": "ppm (micromol/mol in dry air)",
+      "windows": [
+        {
+          "years": [
+            1959,
+            1960,
+            1961
+          ],
+          "values": [
+            "315.98",
+            "316.91",
+            "317.64"
+          ]
+        },
+        {
+          "years": [
+            1960,
+            1961,
+            1962
+          ],
+          "values": [
+            "316.91",
+            "317.64",
+            "318.45"
+          ]
+        },
+        {
+          "years": [
+            1961,
+            1962,
+            1963
+          ],
+          "values": [
+            "317.64",
+            "318.45",
+            "318.99"
+          ]
+        },
+        {
+          "years": [
+            1962,
+            1963,
+            1964
+          ],
+          "values": [
+            "318.45",
+            "318.99",
+            "319.62"
+          ]
+        },
+        {
+          "years": [
+            1963,
+            1964,
+            1965
+          ],
+          "values": [
+            "318.99",
+            "319.62",
+            "320.04"
+          ]
+        },
+        {
+          "years": [
+            1964,
+            1965,
+            1966
+          ],
+          "values": [
+            "319.62",
+            "320.04",
+            "321.37"
+          ]
+        },
+        {
+          "years": [
+            1965,
+            1966,
+            1967
+          ],
+          "values": [
+            "320.04",
+            "321.37",
+            "322.18"
+          ]
+        },
+        {
+          "years": [
+            1966,
+            1967,
+            1968
+          ],
+          "values": [
+            "321.37",
+            "322.18",
+            "323.05"
+          ]
+        },
+        {
+          "years": [
+            1967,
+            1968,
+            1969
+          ],
+          "values": [
+            "322.18",
+            "323.05",
+            "324.62"
+          ]
+        },
+        {
+          "years": [
+            1968,
+            1969,
+            1970
+          ],
+          "values": [
+            "323.05",
+            "324.62",
+            "325.68"
+          ]
+        },
+        {
+          "years": [
+            1969,
+            1970,
+            1971
+          ],
+          "values": [
+            "324.62",
+            "325.68",
+            "326.32"
+          ]
+        },
+        {
+          "years": [
+            1970,
+            1971,
+            1972
+          ],
+          "values": [
+            "325.68",
+            "326.32",
+            "327.46"
+          ]
+        },
+        {
+          "years": [
+            1971,
+            1972,
+            1973
+          ],
+          "values": [
+            "326.32",
+            "327.46",
+            "329.68"
+          ]
+        },
+        {
+          "years": [
+            1972,
+            1973,
+            1974
+          ],
+          "values": [
+            "327.46",
+            "329.68",
+            "330.19"
+          ]
+        },
+        {
+          "years": [
+            1973,
+            1974,
+            1975
+          ],
+          "values": [
+            "329.68",
+            "330.19",
+            "331.13"
+          ]
+        },
+        {
+          "years": [
+            1974,
+            1975,
+            1976
+          ],
+          "values": [
+            "330.19",
+            "331.13",
+            "332.03"
+          ]
+        },
+        {
+          "years": [
+            1975,
+            1976,
+            1977
+          ],
+          "values": [
+            "331.13",
+            "332.03",
+            "333.84"
+          ]
+        },
+        {
+          "years": [
+            1976,
+            1977,
+            1978
+          ],
+          "values": [
+            "332.03",
+            "333.84",
+            "335.41"
+          ]
+        },
+        {
+          "years": [
+            1977,
+            1978,
+            1979
+          ],
+          "values": [
+            "333.84",
+            "335.41",
+            "336.84"
+          ]
+        },
+        {
+          "years": [
+            1978,
+            1979,
+            1980
+          ],
+          "values": [
+            "335.41",
+            "336.84",
+            "338.76"
+          ]
+        },
+        {
+          "years": [
+            1979,
+            1980,
+            1981
+          ],
+          "values": [
+            "336.84",
+            "338.76",
+            "340.12"
+          ]
+        },
+        {
+          "years": [
+            1980,
+            1981,
+            1982
+          ],
+          "values": [
+            "338.76",
+            "340.12",
+            "341.48"
+          ]
+        },
+        {
+          "years": [
+            1981,
+            1982,
+            1983
+          ],
+          "values": [
+            "340.12",
+            "341.48",
+            "343.15"
+          ]
+        },
+        {
+          "years": [
+            1982,
+            1983,
+            1984
+          ],
+          "values": [
+            "341.48",
+            "343.15",
+            "344.87"
+          ]
+        },
+        {
+          "years": [
+            1983,
+            1984,
+            1985
+          ],
+          "values": [
+            "343.15",
+            "344.87",
+            "346.35"
+          ]
+        },
+        {
+          "years": [
+            1984,
+            1985,
+            1986
+          ],
+          "values": [
+            "344.87",
+            "346.35",
+            "347.61"
+          ]
+        },
+        {
+          "years": [
+            1985,
+            1986,
+            1987
+          ],
+          "values": [
+            "346.35",
+            "347.61",
+            "349.31"
+          ]
+        },
+        {
+          "years": [
+            1986,
+            1987,
+            1988
+          ],
+          "values": [
+            "347.61",
+            "349.31",
+            "351.69"
+          ]
+        },
+        {
+          "years": [
+            1987,
+            1988,
+            1989
+          ],
+          "values": [
+            "349.31",
+            "351.69",
+            "353.20"
+          ]
+        },
+        {
+          "years": [
+            1988,
+            1989,
+            1990
+          ],
+          "values": [
+            "351.69",
+            "353.20",
+            "354.45"
+          ]
+        },
+        {
+          "years": [
+            1989,
+            1990,
+            1991
+          ],
+          "values": [
+            "353.20",
+            "354.45",
+            "355.70"
+          ]
+        },
+        {
+          "years": [
+            1990,
+            1991,
+            1992
+          ],
+          "values": [
+            "354.45",
+            "355.70",
+            "356.54"
+          ]
+        },
+        {
+          "years": [
+            1991,
+            1992,
+            1993
+          ],
+          "values": [
+            "355.70",
+            "356.54",
+            "357.21"
+          ]
+        },
+        {
+          "years": [
+            1992,
+            1993,
+            1994
+          ],
+          "values": [
+            "356.54",
+            "357.21",
+            "358.96"
+          ]
+        },
+        {
+          "years": [
+            1993,
+            1994,
+            1995
+          ],
+          "values": [
+            "357.21",
+            "358.96",
+            "360.97"
+          ]
+        },
+        {
+          "years": [
+            1994,
+            1995,
+            1996
+          ],
+          "values": [
+            "358.96",
+            "360.97",
+            "362.74"
+          ]
+        },
+        {
+          "years": [
+            1995,
+            1996,
+            1997
+          ],
+          "values": [
+            "360.97",
+            "362.74",
+            "363.88"
+          ]
+        },
+        {
+          "years": [
+            1996,
+            1997,
+            1998
+          ],
+          "values": [
+            "362.74",
+            "363.88",
+            "366.84"
+          ]
+        },
+        {
+          "years": [
+            1997,
+            1998,
+            1999
+          ],
+          "values": [
+            "363.88",
+            "366.84",
+            "368.54"
+          ]
+        },
+        {
+          "years": [
+            1998,
+            1999,
+            2000
+          ],
+          "values": [
+            "366.84",
+            "368.54",
+            "369.71"
+          ]
+        },
+        {
+          "years": [
+            1999,
+            2000,
+            2001
+          ],
+          "values": [
+            "368.54",
+            "369.71",
+            "371.32"
+          ]
+        },
+        {
+          "years": [
+            2000,
+            2001,
+            2002
+          ],
+          "values": [
+            "369.71",
+            "371.32",
+            "373.45"
+          ]
+        },
+        {
+          "years": [
+            2001,
+            2002,
+            2003
+          ],
+          "values": [
+            "371.32",
+            "373.45",
+            "375.98"
+          ]
+        },
+        {
+          "years": [
+            2002,
+            2003,
+            2004
+          ],
+          "values": [
+            "373.45",
+            "375.98",
+            "377.70"
+          ]
+        },
+        {
+          "years": [
+            2003,
+            2004,
+            2005
+          ],
+          "values": [
+            "375.98",
+            "377.70",
+            "379.98"
+          ]
+        },
+        {
+          "years": [
+            2004,
+            2005,
+            2006
+          ],
+          "values": [
+            "377.70",
+            "379.98",
+            "382.09"
+          ]
+        },
+        {
+          "years": [
+            2005,
+            2006,
+            2007
+          ],
+          "values": [
+            "379.98",
+            "382.09",
+            "384.02"
+          ]
+        },
+        {
+          "years": [
+            2006,
+            2007,
+            2008
+          ],
+          "values": [
+            "382.09",
+            "384.02",
+            "385.83"
+          ]
+        },
+        {
+          "years": [
+            2007,
+            2008,
+            2009
+          ],
+          "values": [
+            "384.02",
+            "385.83",
+            "387.64"
+          ]
+        },
+        {
+          "years": [
+            2008,
+            2009,
+            2010
+          ],
+          "values": [
+            "385.83",
+            "387.64",
+            "390.10"
+          ]
+        },
+        {
+          "years": [
+            2009,
+            2010,
+            2011
+          ],
+          "values": [
+            "387.64",
+            "390.10",
+            "391.85"
+          ]
+        },
+        {
+          "years": [
+            2010,
+            2011,
+            2012
+          ],
+          "values": [
+            "390.10",
+            "391.85",
+            "394.06"
+          ]
+        },
+        {
+          "years": [
+            2011,
+            2012,
+            2013
+          ],
+          "values": [
+            "391.85",
+            "394.06",
+            "396.74"
+          ]
+        },
+        {
+          "years": [
+            2012,
+            2013,
+            2014
+          ],
+          "values": [
+            "394.06",
+            "396.74",
+            "398.81"
+          ]
+        },
+        {
+          "years": [
+            2013,
+            2014,
+            2015
+          ],
+          "values": [
+            "396.74",
+            "398.81",
+            "401.01"
+          ]
+        },
+        {
+          "years": [
+            2014,
+            2015,
+            2016
+          ],
+          "values": [
+            "398.81",
+            "401.01",
+            "404.41"
+          ]
+        },
+        {
+          "years": [
+            2015,
+            2016,
+            2017
+          ],
+          "values": [
+            "401.01",
+            "404.41",
+            "406.76"
+          ]
+        },
+        {
+          "years": [
+            2016,
+            2017,
+            2018
+          ],
+          "values": [
+            "404.41",
+            "406.76",
+            "408.72"
+          ]
+        },
+        {
+          "years": [
+            2017,
+            2018,
+            2019
+          ],
+          "values": [
+            "406.76",
+            "408.72",
+            "411.65"
+          ]
+        },
+        {
+          "years": [
+            2018,
+            2019,
+            2020
+          ],
+          "values": [
+            "408.72",
+            "411.65",
+            "414.21"
+          ]
+        },
+        {
+          "years": [
+            2019,
+            2020,
+            2021
+          ],
+          "values": [
+            "411.65",
+            "414.21",
+            "416.41"
+          ]
+        },
+        {
+          "years": [
+            2020,
+            2021,
+            2022
+          ],
+          "values": [
+            "414.21",
+            "416.41",
+            "418.53"
+          ]
+        },
+        {
+          "years": [
+            2021,
+            2022,
+            2023
+          ],
+          "values": [
+            "416.41",
+            "418.53",
+            "421.08"
+          ]
+        },
+        {
+          "years": [
+            2022,
+            2023,
+            2024
+          ],
+          "values": [
+            "418.53",
+            "421.08",
+            "424.61"
+          ]
+        },
+        {
+          "years": [
+            2023,
+            2024,
+            2025
+          ],
+          "values": [
+            "421.08",
+            "424.61",
+            "427.35"
+          ]
+        }
+      ],
+      "display_assumptions": "Each window starts at time zero with equal sample spacing. Absolute years and ppm labels are not encoded or spoken.",
+      "coverage": "Only these archived rolling windows and exact rounded annual means, not all data or a human auditory result."
+    }
+  },
+  "task_order": [
+    "threshold",
+    "endpoint_trend",
+    "peak_indices",
+    "missing_count",
+    "total"
+  ],
+  "search": {
+    "mode": "explicit_finite_corpus",
+    "series_count": 65,
+    "render_classes": 15,
+    "collision_classes": 12,
+    "equal_render_pairs": 165,
+    "identity_sha256": "44bd8c532f392e5b377a3b092e8abdb3463161db0aed2d7493f137162ddf496b"
+  },
+  "tasks": {
+    "threshold": {
+      "ambiguous_render_classes": 7,
+      "affected_series": 46,
+      "disagreeing_pairs": 49,
+      "witness": {
+        "left": [
+          "6369/20"
+        ],
+        "right": [
+          "40101/100"
+        ],
+        "task": "threshold",
+        "threshold": "400",
+        "left_answer": false,
+        "right_answer": true,
+        "mapping": {
+          "domain_low": "300",
+          "domain_high": "450",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "31691/100",
+          "7941/25",
+          "6369/20"
+        ],
+        "right": [
+          "19837/50",
+          "39881/100",
+          "40101/100"
+        ],
+        "task": "threshold",
+        "threshold": "400",
+        "left_answer": false,
+        "right_answer": true,
+        "mapping": {
+          "domain_low": "300",
+          "domain_high": "450",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6500,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 720
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "31691/100",
+            "7941/25",
+            "6369/20"
+          ],
+          "right": [
+            "19837/50",
+            "39881/100",
+            "40101/100"
+          ],
+          "task": "threshold",
+          "threshold": "400",
+          "left_answer": false,
+          "right_answer": true,
+          "mapping": {
+            "domain_low": "300",
+            "domain_high": "450",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6500,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 720
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "6369/20"
+          ],
+          "right": [
+            "40101/100"
+          ],
+          "task": "threshold",
+          "threshold": "400",
+          "left_answer": false,
+          "right_answer": true,
+          "mapping": {
+            "domain_low": "300",
+            "domain_high": "450",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          0,
+          1
+        ],
+        "retained_left_indices": [
+          2
+        ],
+        "retained_right_indices": [
+          2
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "44bd8c532f392e5b377a3b092e8abdb3463161db0aed2d7493f137162ddf496b",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    },
+    "endpoint_trend": {
+      "ambiguous_render_classes": 0,
+      "affected_series": 0,
+      "disagreeing_pairs": 0,
+      "witness": null,
+      "original_witness": null,
+      "minimization_trace": null,
+      "status": "no_collision_in_explicit_corpus"
+    },
+    "peak_indices": {
+      "ambiguous_render_classes": 0,
+      "affected_series": 0,
+      "disagreeing_pairs": 0,
+      "witness": null,
+      "original_witness": null,
+      "minimization_trace": null,
+      "status": "no_collision_in_explicit_corpus"
+    },
+    "missing_count": {
+      "ambiguous_render_classes": 0,
+      "affected_series": 0,
+      "disagreeing_pairs": 0,
+      "witness": null,
+      "original_witness": null,
+      "minimization_trace": null,
+      "status": "no_collision_in_explicit_corpus"
+    },
+    "total": {
+      "ambiguous_render_classes": 12,
+      "affected_series": 62,
+      "disagreeing_pairs": 165,
+      "witness": {
+        "left": [
+          "6369/20"
+        ],
+        "right": [
+          "15981/50"
+        ],
+        "task": "total",
+        "threshold": "400",
+        "left_answer": "6369/20",
+        "right_answer": "15981/50",
+        "mapping": {
+          "domain_low": "300",
+          "domain_high": "450",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "31691/100",
+          "7941/25",
+          "6369/20"
+        ],
+        "right": [
+          "6369/20",
+          "31899/100",
+          "15981/50"
+        ],
+        "task": "total",
+        "threshold": "400",
+        "left_answer": "953",
+        "right_answer": "47853/50",
+        "mapping": {
+          "domain_low": "300",
+          "domain_high": "450",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6500,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 720
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "31691/100",
+            "7941/25",
+            "6369/20"
+          ],
+          "right": [
+            "6369/20",
+            "31899/100",
+            "15981/50"
+          ],
+          "task": "total",
+          "threshold": "400",
+          "left_answer": "953",
+          "right_answer": "47853/50",
+          "mapping": {
+            "domain_low": "300",
+            "domain_high": "450",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6500,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 720
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "6369/20"
+          ],
+          "right": [
+            "15981/50"
+          ],
+          "task": "total",
+          "threshold": "400",
+          "left_answer": "6369/20",
+          "right_answer": "15981/50",
+          "mapping": {
+            "domain_low": "300",
+            "domain_high": "450",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          0,
+          1
+        ],
+        "retained_left_indices": [
+          2
+        ],
+        "retained_right_indices": [
+          2
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "44bd8c532f392e5b377a3b092e8abdb3463161db0aed2d7493f137162ddf496b",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    }
+  },
+  "scope": "Exact event equality in EchoProof's discrete renderer. No human perceptual claim; no guarantee outside this finite grid or explicitly listed corpus."
+}

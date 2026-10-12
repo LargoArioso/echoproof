@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echoproof"
+version = "0.1.0"
+description = "Task-aware exact collision certificates for discrete data sonification"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+echoproof = "echoproof.cli:main"
+
+[tool.setuptools]
+packages = ["echoproof"]

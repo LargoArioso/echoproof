@@ -1,0 +1,429 @@
+{
+  "schema_version": 1,
+  "claim_type": "finite_task_audit",
+  "engine_version": "0.1.0",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "10",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 100,
+    "missing": "zero",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "domain": {
+    "levels": [
+      "0",
+      "5",
+      "10"
+    ],
+    "lengths": [
+      2,
+      3
+    ],
+    "include_missing": true,
+    "threshold": "5"
+  },
+  "task_order": [
+    "missing_count",
+    "endpoint_trend"
+  ],
+  "search": {
+    "mode": "exhaustive_finite_grid",
+    "series_count": 80,
+    "render_classes": 36,
+    "collision_classes": 24,
+    "equal_render_pairs": 86,
+    "identity_sha256": "97db3b3b69240921cafddd22ef09a216a3f2677a2977e91ae48ec441b39d2015"
+  },
+  "tasks": {
+    "missing_count": {
+      "ambiguous_render_classes": 24,
+      "affected_series": 68,
+      "disagreeing_pairs": 73,
+      "witness": {
+        "left": [
+          "0"
+        ],
+        "right": [
+          null
+        ],
+        "task": "missing_count",
+        "threshold": "5",
+        "left_answer": 0,
+        "right_answer": 1,
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "zero",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "0",
+          "0"
+        ],
+        "right": [
+          "0",
+          null
+        ],
+        "task": "missing_count",
+        "threshold": "5",
+        "left_answer": 0,
+        "right_answer": 1,
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "zero",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 480
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "0",
+            "0"
+          ],
+          "right": [
+            "0",
+            null
+          ],
+          "task": "missing_count",
+          "threshold": "5",
+          "left_answer": 0,
+          "right_answer": 1,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "zero",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "0"
+          ],
+          "right": [
+            null
+          ],
+          "task": "missing_count",
+          "threshold": "5",
+          "left_answer": 0,
+          "right_answer": 1,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "zero",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          0
+        ],
+        "retained_left_indices": [
+          1
+        ],
+        "retained_right_indices": [
+          1
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "97db3b3b69240921cafddd22ef09a216a3f2677a2977e91ae48ec441b39d2015",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    },
+    "endpoint_trend": {
+      "ambiguous_render_classes": 18,
+      "affected_series": 56,
+      "disagreeing_pairs": 53,
+      "witness": {
+        "left": [
+          "0",
+          "0"
+        ],
+        "right": [
+          "0",
+          null
+        ],
+        "task": "endpoint_trend",
+        "threshold": "5",
+        "left_answer": "flat",
+        "right_answer": "undefined",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "zero",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 480
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "0",
+          "0"
+        ],
+        "right": [
+          "0",
+          null
+        ],
+        "task": "endpoint_trend",
+        "threshold": "5",
+        "left_answer": "flat",
+        "right_answer": "undefined",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "zero",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 480
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "0",
+            "0"
+          ],
+          "right": [
+            "0",
+            null
+          ],
+          "task": "endpoint_trend",
+          "threshold": "5",
+          "left_answer": "flat",
+          "right_answer": "undefined",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "zero",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "0",
+            "0"
+          ],
+          "right": [
+            "0",
+            null
+          ],
+          "task": "endpoint_trend",
+          "threshold": "5",
+          "left_answer": "flat",
+          "right_answer": "undefined",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "zero",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [],
+        "retained_left_indices": [
+          0,
+          1
+        ],
+        "retained_right_indices": [
+          0,
+          1
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "97db3b3b69240921cafddd22ef09a216a3f2677a2977e91ae48ec441b39d2015",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    }
+  },
+  "scope": "Exact event equality in EchoProof's discrete renderer. No human perceptual claim; no guarantee outside this finite grid or explicitly listed corpus."
+}

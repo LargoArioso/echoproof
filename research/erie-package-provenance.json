@@ -1,0 +1,28 @@
+{
+  "name": "erie-web",
+  "version": "1.0.1",
+  "repository": {
+    "url": "git+https://github.com/see-mike-out/erie-web.git",
+    "type": "git"
+  },
+  "dist": {
+    "shasum": "717a4d29c47cb8242bd023fef74ec9e150acaa94",
+    "tarball": "https://registry.npmjs.org/erie-web/-/erie-web-1.0.1.tgz",
+    "fileCount": 712,
+    "integrity": "sha512-hsAefPEp85yULPbS0Eog9wsVBPXuvNMIAqs1zdYTGm+jUBqtvliLRwnedkJ4q+sGc2hQdxU/zGxOglLS0+X9UQ==",
+    "signatures": [
+      {
+        "sig": "MEYCIQCYV1jiqMvVWyH1l9TsnBpl9HzhIMQWqk1rV+0lwiHA/wIhAJaFW+EQTJaVqpHRcjKRo6tG5Fdx8X5sq+cFKzsF6ccy",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "sig": "MEQCID+5H6PHjhe7FAlJedko755pxCVBaZ2rOPfT4RKVGmVBAiAGHJZQijSP8tx20DFCYeTnhao3mLfgseavM5of5auQPw==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 10449442
+  },
+  "package_sha256": "ff387b41055083fb2af3cc5af252d3d9a09ee4d75cb6f7fc7f1535e7c588cb3c",
+  "extracted_files": 712,
+  "retrieved_date": "2026-10-11"
+}

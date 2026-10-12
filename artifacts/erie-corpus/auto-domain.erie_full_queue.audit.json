@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "claim_type": "compiled_corpus_audit",
+  "backend": {
+    "name": "erie-web",
+    "version": "1.0.1",
+    "runtime": "v24.19.0",
+    "bundle_sha256": "c0436ae77d3d7d5d9eca85291f4f62f3c9e3ca706d95cbd550c02827fbf6c6f0"
+  },
+  "audit_scope": "erie_full_queue",
+  "task_basis": "original_input_series_before_transforms",
+  "threshold": "3",
+  "recording_count": 27,
+  "projection_classes": 27,
+  "tasks": {
+    "threshold": {
+      "status": "no_collision_in_recorded_corpus",
+      "disagreeing_pairs": 0,
+      "witness": null
+    },
+    "endpoint_trend": {
+      "status": "no_collision_in_recorded_corpus",
+      "disagreeing_pairs": 0,
+      "witness": null
+    },
+    "peak_indices": {
+      "status": "no_collision_in_recorded_corpus",
+      "disagreeing_pairs": 0,
+      "witness": null
+    },
+    "missing_count": {
+      "status": "no_collision_in_recorded_corpus",
+      "disagreeing_pairs": 0,
+      "witness": null
+    },
+    "total": {
+      "status": "no_collision_in_recorded_corpus",
+      "disagreeing_pairs": 0,
+      "witness": null
+    }
+  },
+  "source_corpus_sha256": "2294a2b668d796fd1701beaeba1904e08fccde2e95f6aa95c8c110494a58a982",
+  "scope": "Finite recorded corpus only; backend association requires rerunning the producer. Aggregation can intentionally remove detail: a task mismatch is not automatically a library bug."
+}

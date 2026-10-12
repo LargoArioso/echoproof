@@ -1,0 +1,6 @@
+{
+  "mapping": {"domain_low": "0", "domain_high": "100", "pitch_step_cents": 1200},
+  "thresholds": [50, 51],
+  "reported_input_interval": [0, 100],
+  "question": "reported"
+}

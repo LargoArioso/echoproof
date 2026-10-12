@@ -1,0 +1,141 @@
+{
+  "method": "one cold Python process per case; enumeration plus semantic grouping, excluding report/WAV generation",
+  "python_version": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "results": [
+    {
+      "case": {
+        "name": "injective_small",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 4,
+        "mapping": {}
+      },
+      "elapsed_seconds": 0.103165,
+      "peak_rss_bytes": 17661952,
+      "series_per_second": 6058.24,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 625,
+        "render_classes": 625,
+        "collision_classes": 0,
+        "equal_render_pairs": 0,
+        "identity_sha256": "fbaf8ab3dddd4ffbbad9d3262c748c809b1fada9570c44ffbef9f18f22c0f1e9"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 0
+      }
+    },
+    {
+      "case": {
+        "name": "injective_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {}
+      },
+      "elapsed_seconds": 22.255366,
+      "peak_rss_bytes": 338608128,
+      "series_per_second": 3510.39,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 78125,
+        "collision_classes": 0,
+        "equal_render_pairs": 0,
+        "identity_sha256": "fd0365ecc04b68f0af486effa1698bd2a7a0039720f551e06fbdaca2c9d4cdc5"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 0
+      }
+    },
+    {
+      "case": {
+        "name": "normalized_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {
+          "normalization": "per_series"
+        }
+      },
+      "elapsed_seconds": 22.026115,
+      "peak_rss_bytes": 261160960,
+      "series_per_second": 3546.93,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 59557,
+        "collision_classes": 13945,
+        "equal_render_pairs": 28528,
+        "identity_sha256": "c635eb65c05cd9c9b2278e3af357801673fa10b3edd1a8d634b27a33855e2b40"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 28136
+      }
+    },
+    {
+      "case": {
+        "name": "sampled_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {
+          "stride": 2
+        }
+      },
+      "elapsed_seconds": 16.588959,
+      "peak_rss_bytes": 19660800,
+      "series_per_second": 4709.46,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 625,
+        "collision_classes": 625,
+        "equal_render_pairs": 4843750,
+        "identity_sha256": "baf8ad2b6aa5ece4a574b35eb4e72eac0368e9dde5ba3e1b0d0e92e80ae0a8c5"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 3725088,
+        "missing_count": 0,
+        "total": 4335625
+      }
+    }
+  ],
+  "scope": "Single-run local timings, not statistical performance guarantees or cross-machine comparisons."
+}

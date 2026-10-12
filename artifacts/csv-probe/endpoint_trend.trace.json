@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "claim_type": "paired_deletion_trace",
+  "original": {
+    "left": [
+      "1",
+      "2",
+      "3",
+      "2",
+      "1"
+    ],
+    "right": [
+      "99/100",
+      "2",
+      "3",
+      "2",
+      "1"
+    ],
+    "task": "endpoint_trend",
+    "threshold": "3",
+    "left_answer": "flat",
+    "right_answer": "rising",
+    "mapping": {
+      "domain_low": "0",
+      "domain_high": "10",
+      "normalization": "per_series",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 100,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 180,
+          "pitch_cents": 4800,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 240,
+          "duration_ms": 180,
+          "pitch_cents": 6600,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 480,
+          "duration_ms": 180,
+          "pitch_cents": 8400,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 720,
+          "duration_ms": 180,
+          "pitch_cents": 6600,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 960,
+          "duration_ms": 180,
+          "pitch_cents": 4800,
+          "kind": "tone"
+        }
+      ],
+      "duration_ms": 1200
+    },
+    "claim": "exact_render_collision"
+  },
+  "final": {
+    "left": [
+      "1",
+      "2",
+      "1"
+    ],
+    "right": [
+      "99/100",
+      "2",
+      "1"
+    ],
+    "task": "endpoint_trend",
+    "threshold": "3",
+    "left_answer": "flat",
+    "right_answer": "rising",
+    "mapping": {
+      "domain_low": "0",
+      "domain_high": "10",
+      "normalization": "per_series",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 100,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 180,
+          "pitch_cents": 4800,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 240,
+          "duration_ms": 180,
+          "pitch_cents": 8400,
+          "kind": "tone"
+        },
+        {
+          "onset_ms": 480,
+          "duration_ms": 180,
+          "pitch_cents": 4800,
+          "kind": "tone"
+        }
+      ],
+      "duration_ms": 720
+    },
+    "claim": "exact_render_collision",
+    "minimization": "paired-deletion 1-minimal"
+  },
+  "removed_original_indices": [
+    1,
+    2
+  ],
+  "retained_left_indices": [
+    0,
+    3,
+    4
+  ],
+  "retained_right_indices": [
+    0,
+    3,
+    4
+  ],
+  "status": "one_minimal",
+  "audit_identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f",
+  "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+}

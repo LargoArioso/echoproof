@@ -1,0 +1,11 @@
+{
+  "seed": 20261011,
+  "cases": 10000,
+  "render_checks": 10000,
+  "task_answer_checks": 50000,
+  "failures": 0,
+  "campaign_input_sha256": "571b65700f174b8a96b98af660339cb92d7852b4d65510022ba2491e92969d23",
+  "elapsed_seconds": 2.725928,
+  "oracle": "independent normalized integer ratios; no Fraction, encode or answer calls inside reference functions",
+  "scope": "Finite differential falsification, not formal verification or a perceptual test."
+}

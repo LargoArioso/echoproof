@@ -1,0 +1,37 @@
+{
+  "left": [
+    "6369/20"
+  ],
+  "right": [
+    "40101/100"
+  ],
+  "task": "threshold",
+  "threshold": "400",
+  "left_answer": false,
+  "right_answer": true,
+  "mapping": {
+    "domain_low": "300",
+    "domain_high": "450",
+    "normalization": "per_series",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 100,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "render": {
+    "events": [
+      {
+        "onset_ms": 0,
+        "duration_ms": 180,
+        "pitch_cents": 6600,
+        "kind": "tone"
+      }
+    ],
+    "duration_ms": 240
+  },
+  "claim": "exact_render_collision",
+  "minimization": "paired-deletion 1-minimal"
+}

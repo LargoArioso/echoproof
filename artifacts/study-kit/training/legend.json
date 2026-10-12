@@ -1,0 +1,188 @@
+[
+  {
+    "task": "threshold",
+    "answer": false,
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3600,
+          "kind": "semantic_threshold_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 6000,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 4800,
+          "kind": "semantic_answer"
+        }
+      ],
+      "duration_ms": 540
+    }
+  },
+  {
+    "task": "threshold",
+    "answer": true,
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3600,
+          "kind": "semantic_threshold_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 4800,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 6000,
+          "kind": "semantic_answer"
+        }
+      ],
+      "duration_ms": 540
+    }
+  },
+  {
+    "task": "endpoint_trend",
+    "answer": "rising",
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3900,
+          "kind": "semantic_endpoint_trend_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 4800,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 5400,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 540,
+          "duration_ms": 120,
+          "pitch_cents": 6000,
+          "kind": "semantic_answer"
+        }
+      ],
+      "duration_ms": 720
+    }
+  },
+  {
+    "task": "endpoint_trend",
+    "answer": "falling",
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3900,
+          "kind": "semantic_endpoint_trend_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 6000,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 5400,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 540,
+          "duration_ms": 120,
+          "pitch_cents": 4800,
+          "kind": "semantic_answer"
+        }
+      ],
+      "duration_ms": 720
+    }
+  },
+  {
+    "task": "endpoint_trend",
+    "answer": "flat",
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3900,
+          "kind": "semantic_endpoint_trend_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 5400,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 5400,
+          "kind": "semantic_answer"
+        },
+        {
+          "onset_ms": 540,
+          "duration_ms": 120,
+          "pitch_cents": 5400,
+          "kind": "semantic_answer"
+        }
+      ],
+      "duration_ms": 720
+    }
+  },
+  {
+    "task": "endpoint_trend",
+    "answer": "undefined",
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 120,
+          "pitch_cents": 3900,
+          "kind": "semantic_endpoint_trend_header"
+        },
+        {
+          "onset_ms": 180,
+          "duration_ms": 120,
+          "pitch_cents": 3600,
+          "kind": "semantic_unknown"
+        },
+        {
+          "onset_ms": 360,
+          "duration_ms": 120,
+          "pitch_cents": 3600,
+          "kind": "semantic_unknown"
+        },
+        {
+          "onset_ms": 540,
+          "duration_ms": 120,
+          "pitch_cents": 3600,
+          "kind": "semantic_unknown"
+        }
+      ],
+      "duration_ms": 720
+    }
+  }
+]

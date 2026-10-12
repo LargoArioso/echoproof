@@ -1,0 +1,5 @@
+{
+  "reported": [50],
+  "intervals": [["49.9", "50.1"]],
+  "threshold": "50"
+}

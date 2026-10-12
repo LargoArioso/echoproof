@@ -1,0 +1,17 @@
+{
+  "seed": 20261012,
+  "configurations": 500,
+  "corner_worlds_checked": 11070,
+  "statuses": {
+    "determined_true": 252,
+    "determined_false": 70,
+    "not_identifiable": 178
+  },
+  "differences": 0,
+  "input_sha256": "deba98da7ed7a3c1529ff5505d69e3af84b849d569c28c51c17f1027ab22c2ed",
+  "source_sha256": {
+    "tools/observation_campaign.py": "ff181d2d609ef5775753739d77f861d407e084365c778654d51d606f5581f895",
+    "echoproof/uncertainty.py": "fc1e065f25ab306da45725921cd3ea4ec0ef01eaf9f0ec526e2fbf2df34621bf"
+  },
+  "scope": "500 declared rational closed Cartesian interval sets of 1..6 dimensions. Enumerates every corner world, computes predicates/counts directly without production answer or bound functions. Endpoint enumeration checks the finite corners; continuous sufficiency separately follows monotonicity. Reported values may represent declared bias. No measured errors, calibration, probabilities or human data."
+}

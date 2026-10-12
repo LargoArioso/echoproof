@@ -1,0 +1,154 @@
+{
+  "method": "one cold Python process per case; enumeration plus semantic grouping, excluding report/WAV generation",
+  "python_version": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "results": [
+    {
+      "case": {
+        "name": "injective_small",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 4,
+        "mapping": {}
+      },
+      "elapsed_seconds": 0.070204,
+      "peak_rss_bytes": 16072704,
+      "series_per_second": 8902.67,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 625,
+        "render_classes": 625,
+        "collision_classes": 0,
+        "equal_render_pairs": 0,
+        "identity_sha256": "fbaf8ab3dddd4ffbbad9d3262c748c809b1fada9570c44ffbef9f18f22c0f1e9"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 0
+      }
+    },
+    {
+      "case": {
+        "name": "injective_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {}
+      },
+      "elapsed_seconds": 14.222824,
+      "peak_rss_bytes": 99172352,
+      "series_per_second": 5492.93,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 78125,
+        "collision_classes": 0,
+        "equal_render_pairs": 0,
+        "identity_sha256": "fd0365ecc04b68f0af486effa1698bd2a7a0039720f551e06fbdaca2c9d4cdc5"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 0
+      }
+    },
+    {
+      "case": {
+        "name": "normalized_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {
+          "normalization": "per_series"
+        }
+      },
+      "elapsed_seconds": 14.869654,
+      "peak_rss_bytes": 103301120,
+      "series_per_second": 5253.99,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 59557,
+        "collision_classes": 13945,
+        "equal_render_pairs": 28528,
+        "identity_sha256": "c635eb65c05cd9c9b2278e3af357801673fa10b3edd1a8d634b27a33855e2b40"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 0,
+        "missing_count": 0,
+        "total": 28136
+      }
+    },
+    {
+      "case": {
+        "name": "sampled_large",
+        "levels": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "length": 7,
+        "mapping": {
+          "stride": 2
+        }
+      },
+      "elapsed_seconds": 10.014965,
+      "peak_rss_bytes": 19185664,
+      "series_per_second": 7800.83,
+      "search": {
+        "mode": "exhaustive_finite_grid",
+        "series_count": 78125,
+        "render_classes": 625,
+        "collision_classes": 625,
+        "equal_render_pairs": 4843750,
+        "identity_sha256": "baf8ad2b6aa5ece4a574b35eb4e72eac0368e9dde5ba3e1b0d0e92e80ae0a8c5"
+      },
+      "task_disagreeing_pairs": {
+        "threshold": 0,
+        "endpoint_trend": 0,
+        "peak_indices": 3725088,
+        "missing_count": 0,
+        "total": 4335625
+      }
+    }
+  ],
+  "scope": "Single-run local timings, not statistical performance guarantees or cross-machine comparisons.",
+  "source_sha256": {
+    "echoproof/__init__.py": "b04f574a74daf66e58b64063fec9a9ce49fd6d90ebcc38d46bbf8409a4354045",
+    "echoproof/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "echoproof/audio.py": "f11f1b17966a166acb77a4e322afb0e1db0ae4ff78df1c45d80020d2466b56b8",
+    "echoproof/audit.py": "eed5b84b3dc53c682be40b3ab2e93427b3666b5e5d4de6ea67c736aca139b4b7",
+    "echoproof/cli.py": "d38b12de5701bfce77678ff8efbfe1bc19b77d9252aeea7c34c255b213d011d0",
+    "echoproof/cues.py": "2022e15ca90e3533b1c37ef0b321583e88f091d4ce6460958ff5398de1a8d4bc",
+    "echoproof/intervals.py": "e206283f70b12cbfac84c891d8c937ad09b934c6b66b45bbc75df24ce7425ca3",
+    "echoproof/model.py": "5755f4b9c45050fc9137aeaa9c1178e6cef5dde249f9fc619ee9b2a25bfe6c7f",
+    "echoproof/probe.py": "0c227ded4d48d7fe50212b287bb81d7935eb080ad632ba6db203c14e7b5b47d4",
+    "echoproof/report.py": "01777af7da075adacff3d93e8d3079ce66e418d4346a9e9685225bf854fd35ed",
+    "echoproof/tasks.py": "d8dd80ed701c73952f9d0c0037079202c6889c4ded30641dda4fd92972a46ec8"
+  }
+}

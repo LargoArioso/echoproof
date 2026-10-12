@@ -1,0 +1,702 @@
+{
+  "schema_version": 1,
+  "claim_type": "threshold_diagnosis",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "100",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "thresholds": [
+    "51"
+  ],
+  "reported_input_low": "0",
+  "reported_input_high": "100",
+  "question": "reported",
+  "reported": null,
+  "actual_intervals": null,
+  "status": "reported_mapping_collision_found",
+  "nominal_answers": null,
+  "observation_certificates": null,
+  "original_reported_contracts": {
+    "51": {
+      "schema_version": 1,
+      "claim_type": "numeric_threshold_contract",
+      "mapping": {
+        "domain_low": "0",
+        "domain_high": "100",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "threshold": "51",
+      "input_low": "0",
+      "input_high": "100",
+      "scope": "All positive-length numeric-only series with every value in the declared closed interval. No missing samples. Exact EchoProof events and known contract interval only; no human, source authenticity, input-uncertainty or other-task claim.",
+      "status": "collision_found",
+      "proof_kind": "linear_quantization",
+      "constant_answer": null,
+      "witness": {
+        "left": [
+          "101/2"
+        ],
+        "right": [
+          "51"
+        ],
+        "task": "threshold",
+        "threshold": "51",
+        "left_answer": false,
+        "right_answer": true,
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "100",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 1200,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 7200,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision"
+      },
+      "linear_certificate": {
+        "schema_version": 1,
+        "claim_type": "continuous_interval_threshold",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "100",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 1200,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "threshold": "51",
+        "input_low": "0",
+        "input_high": "100",
+        "assumptions": [
+          "no missing samples",
+          "positive-length series",
+          "fixed scale",
+          "stride = 1"
+        ],
+        "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+        "status": "collision_found",
+        "reason": "A single pitch cell contains values on both sides of the threshold.",
+        "witness": {
+          "left": [
+            "101/2"
+          ],
+          "right": [
+            "51"
+          ],
+          "task": "threshold",
+          "threshold": "51",
+          "left_answer": false,
+          "right_answer": true,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision"
+        }
+      }
+    }
+  },
+  "reported_mapping_designs": [
+    {
+      "kind": "linear_range_alignment",
+      "mapping": {
+        "domain_low": "0",
+        "domain_high": "102",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "changed_fields": [
+        "domain_high"
+      ],
+      "contracts": {
+        "51": {
+          "schema_version": 1,
+          "claim_type": "numeric_threshold_contract",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "102",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "threshold": "51",
+          "input_low": "0",
+          "input_high": "100",
+          "scope": "All positive-length numeric-only series with every value in the declared closed interval. No missing samples. Exact EchoProof events and known contract interval only; no human, source authenticity, input-uncertainty or other-task claim.",
+          "status": "preserved",
+          "proof_kind": "linear_quantization",
+          "constant_answer": null,
+          "witness": null,
+          "linear_certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "102",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          }
+        }
+      },
+      "previously_preserved_thresholds_lost": [
+        "50/3",
+        "50",
+        "250/3"
+      ],
+      "regression_scope": "Declared reported interval; original fixed stride-one transition thresholds only. Other tasks are not checked."
+    },
+    {
+      "kind": "linear_range_alignment",
+      "mapping": {
+        "domain_low": "-194",
+        "domain_high": "100",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "changed_fields": [
+        "domain_low"
+      ],
+      "contracts": {
+        "51": {
+          "schema_version": 1,
+          "claim_type": "numeric_threshold_contract",
+          "mapping": {
+            "domain_low": "-194",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "threshold": "51",
+          "input_low": "0",
+          "input_high": "100",
+          "scope": "All positive-length numeric-only series with every value in the declared closed interval. No missing samples. Exact EchoProof events and known contract interval only; no human, source authenticity, input-uncertainty or other-task claim.",
+          "status": "preserved",
+          "proof_kind": "linear_quantization",
+          "constant_answer": null,
+          "witness": null,
+          "linear_certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "-194",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          }
+        }
+      },
+      "previously_preserved_thresholds_lost": [
+        "50/3",
+        "50",
+        "250/3"
+      ],
+      "regression_scope": "Declared reported interval; original fixed stride-one transition thresholds only. Other tasks are not checked."
+    },
+    {
+      "kind": "linear_range_alignment",
+      "mapping": {
+        "domain_low": "0",
+        "domain_high": "306",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "changed_fields": [
+        "domain_high"
+      ],
+      "contracts": {
+        "51": {
+          "schema_version": 1,
+          "claim_type": "numeric_threshold_contract",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "306",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "threshold": "51",
+          "input_low": "0",
+          "input_high": "100",
+          "scope": "All positive-length numeric-only series with every value in the declared closed interval. No missing samples. Exact EchoProof events and known contract interval only; no human, source authenticity, input-uncertainty or other-task claim.",
+          "status": "preserved",
+          "proof_kind": "linear_quantization",
+          "constant_answer": null,
+          "witness": null,
+          "linear_certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "306",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          }
+        }
+      },
+      "previously_preserved_thresholds_lost": [
+        "50/3",
+        "50",
+        "250/3"
+      ],
+      "regression_scope": "Declared reported interval; original fixed stride-one transition thresholds only. Other tasks are not checked."
+    },
+    {
+      "kind": "nonuniform_partition",
+      "partition": {
+        "schema_version": 1,
+        "claim_type": "nonuniform_threshold_partition",
+        "original_mapping": {
+          "domain_low": "0",
+          "domain_high": "100",
+          "normalization": "fixed",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 1200,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "input_low": "0",
+        "input_high": "100",
+        "thresholds": [
+          "51"
+        ],
+        "cutpoints": [
+          "51"
+        ],
+        "available_pitches_cents": [
+          4800,
+          6000,
+          7200,
+          8400
+        ],
+        "lower_bound": {
+          "required_pitch_symbols": 2,
+          "singleton_representatives": [
+            "0",
+            "51"
+          ],
+          "distinct_answer_vectors": [
+            [
+              false
+            ],
+            [
+              true
+            ]
+          ],
+          "scope": "Exactly one pitch event per sample, fixed onset and duration, no other data-bearing channel. Bound follows from distinct singleton answer vectors."
+        },
+        "scope": "All positive-length series of real values in the declared closed interval, no missing samples. Monotone nonuniform bins, inclusive threshold boundaries, original pitch vocabulary and fixed timing retained. Each event preserves every requested threshold predicate, hence occurrence indices and counts as well as any/all decisions. Event-level sufficiency only; no human listening claim or numerical-value recovery.",
+        "status": "preserved",
+        "selected_pitches_cents": [
+          4800,
+          8400
+        ],
+        "reason": "Every requested nonconstant threshold is a bin boundary; the construction attains the scoped alphabet lower bound"
+      },
+      "changed_fields": [
+        "value_to_pitch_geometry"
+      ],
+      "previously_preserved_thresholds_lost": [
+        "50/3",
+        "50",
+        "250/3"
+      ],
+      "scope": "Preserves every requested reported threshold over the constructor interval covering the source range and reported contract. Does not certify trend, exact values or actual-value identifiability."
+    }
+  ],
+  "design_searches": {
+    "linear": {
+      "schema_version": 1,
+      "claim_type": "threshold_range_alignment",
+      "original_mapping": {
+        "domain_low": "0",
+        "domain_high": "100",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "threshold": "51",
+      "input_low": "0",
+      "input_high": "100",
+      "limit": 3,
+      "candidates": [
+        {
+          "operation": "adjust_high",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "102",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "normalized_endpoint_change": "1/50",
+          "transition_index": 1,
+          "certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "102",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          },
+          "previously_preserved_thresholds_lost": [
+            "50/3",
+            "50",
+            "250/3"
+          ]
+        },
+        {
+          "operation": "adjust_low",
+          "mapping": {
+            "domain_low": "-194",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "normalized_endpoint_change": "97/50",
+          "transition_index": 2,
+          "certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "-194",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          },
+          "previously_preserved_thresholds_lost": [
+            "50/3",
+            "50",
+            "250/3"
+          ]
+        },
+        {
+          "operation": "adjust_high",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "306",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "normalized_endpoint_change": "103/50",
+          "transition_index": 0,
+          "certificate": {
+            "schema_version": 1,
+            "claim_type": "continuous_interval_threshold",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "306",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "threshold": "51",
+            "input_low": "0",
+            "input_high": "100",
+            "assumptions": [
+              "no missing samples",
+              "positive-length series",
+              "fixed scale",
+              "stride = 1"
+            ],
+            "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+            "status": "preserved",
+            "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+            "witness": null,
+            "transition": "51"
+          },
+          "previously_preserved_thresholds_lost": [
+            "50/3",
+            "50",
+            "250/3"
+          ]
+        }
+      ],
+      "search": {
+        "families": [
+          "hold low endpoint and adjust high",
+          "hold high endpoint and adjust low"
+        ],
+        "admissible_candidates": 3,
+        "pitch_steps_considered": 3
+      },
+      "scope": "Exact threshold preservation certificates for the declared closed input interval, no missing samples. Pitch range and step unchanged; fixed normalization. Ranking minimizes endpoint displacement only within these one-endpoint families, not human perception or a global design optimum."
+    },
+    "nonuniform": {
+      "schema_version": 1,
+      "claim_type": "nonuniform_threshold_partition",
+      "original_mapping": {
+        "domain_low": "0",
+        "domain_high": "100",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "input_low": "0",
+      "input_high": "100",
+      "thresholds": [
+        "51"
+      ],
+      "cutpoints": [
+        "51"
+      ],
+      "available_pitches_cents": [
+        4800,
+        6000,
+        7200,
+        8400
+      ],
+      "lower_bound": {
+        "required_pitch_symbols": 2,
+        "singleton_representatives": [
+          "0",
+          "51"
+        ],
+        "distinct_answer_vectors": [
+          [
+            false
+          ],
+          [
+            true
+          ]
+        ],
+        "scope": "Exactly one pitch event per sample, fixed onset and duration, no other data-bearing channel. Bound follows from distinct singleton answer vectors."
+      },
+      "scope": "All positive-length series of real values in the declared closed interval, no missing samples. Monotone nonuniform bins, inclusive threshold boundaries, original pitch vocabulary and fixed timing retained. Each event preserves every requested threshold predicate, hence occurrence indices and counts as well as any/all decisions. Event-level sufficiency only; no human listening claim or numerical-value recovery.",
+      "status": "preserved",
+      "selected_pitches_cents": [
+        4800,
+        8400
+      ],
+      "reason": "Every requested nonconstant threshold is a bin boundary; the construction attains the scoped alphabet lower bound"
+    }
+  },
+  "scope": "Diagnosis separates actual-value identifiability for this reported observation from numeric-only reported-value mapping contracts over all positive-length input series. Designs concern reported values only, even when the selected primary question is actual. Unknown actual answers require further information or an uncertainty response, not a nominal answer cue. Linear families, pitch-alphabet capacity and constructor coverage are explicit restrictions; no global design optimum, automatic selection, human hearing, source authenticity, probability, missing-data or non-threshold-task claim."
+}

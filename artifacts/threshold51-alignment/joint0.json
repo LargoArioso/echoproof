@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "claim_type": "simultaneous_threshold_alignment",
+  "original_mapping": {
+    "domain_low": "0",
+    "domain_high": "100",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "thresholds": [
+    "50/3",
+    "51"
+  ],
+  "input_low": "0",
+  "input_high": "100",
+  "limit": 4,
+  "constraints": {
+    "covered_low": "0",
+    "covered_high": "100",
+    "minimum_transition_spacing": "100/3",
+    "smallest_threshold_gap": "103/3"
+  },
+  "scope": "Complete finite search of linear fixed ranges retaining the pitch span and step and covering the original range plus declared closed interval. Positive-length series, no missing samples, stride = 1. Event-level claim, no human listening claim.",
+  "status": "preserved",
+  "candidates": [
+    {
+      "mapping": {
+        "domain_low": "-1/2",
+        "domain_high": "205/2",
+        "normalization": "fixed",
+        "pitch_low_cents": 4800,
+        "pitch_high_cents": 8400,
+        "pitch_step_cents": 1200,
+        "missing": "silence",
+        "stride": 1,
+        "note_ms": 180,
+        "slot_ms": 240
+      },
+      "normalized_endpoint_change": "3/100",
+      "transition_indices": [
+        0,
+        1
+      ],
+      "certificates": [
+        {
+          "schema_version": 1,
+          "claim_type": "continuous_interval_threshold",
+          "mapping": {
+            "domain_low": "-1/2",
+            "domain_high": "205/2",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "threshold": "50/3",
+          "input_low": "0",
+          "input_high": "100",
+          "assumptions": [
+            "no missing samples",
+            "positive-length series",
+            "fixed scale",
+            "stride = 1"
+          ],
+          "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+          "status": "preserved",
+          "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+          "witness": null,
+          "transition": "50/3"
+        },
+        {
+          "schema_version": 1,
+          "claim_type": "continuous_interval_threshold",
+          "mapping": {
+            "domain_low": "-1/2",
+            "domain_high": "205/2",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "threshold": "51",
+          "input_low": "0",
+          "input_high": "100",
+          "assumptions": [
+            "no missing samples",
+            "positive-length series",
+            "fixed scale",
+            "stride = 1"
+          ],
+          "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+          "status": "preserved",
+          "reason": "The threshold is exactly a pitch transition; lower samples map below its pitch and higher samples at or above it.",
+          "witness": null,
+          "transition": "51"
+        }
+      ]
+    }
+  ],
+  "reason": "All requested thresholds align",
+  "search": {
+    "transition_count": 3,
+    "index_pairs_checked": 2,
+    "index_pair_upper_bound": 2,
+    "feasible_ranges": 1
+  }
+}

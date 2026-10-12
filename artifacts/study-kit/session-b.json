@@ -1,0 +1,226 @@
+[
+  {
+    "trial_id": "691d957a27557aaa",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/691d957a27557aaa.wav"
+  },
+  {
+    "trial_id": "b529247477a68e64",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/b529247477a68e64.wav"
+  },
+  {
+    "trial_id": "130a0ecde6a58e30",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/130a0ecde6a58e30.wav"
+  },
+  {
+    "trial_id": "d4d3cfc44b3b9c14",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/d4d3cfc44b3b9c14.wav"
+  },
+  {
+    "trial_id": "0a55dc94806ff69f",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/0a55dc94806ff69f.wav"
+  },
+  {
+    "trial_id": "668ff1a2e236b200",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/668ff1a2e236b200.wav"
+  },
+  {
+    "trial_id": "f02c1321852e09ea",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/f02c1321852e09ea.wav"
+  },
+  {
+    "trial_id": "b1f246fb415d8a46",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/b1f246fb415d8a46.wav"
+  },
+  {
+    "trial_id": "140ba9d7f9d77377",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/140ba9d7f9d77377.wav"
+  },
+  {
+    "trial_id": "510fefb339acf377",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/510fefb339acf377.wav"
+  },
+  {
+    "trial_id": "d31636fe3182ac3f",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/d31636fe3182ac3f.wav"
+  },
+  {
+    "trial_id": "0f8f3b5aca2761de",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/0f8f3b5aca2761de.wav"
+  },
+  {
+    "trial_id": "5cc242c61b3e1a63",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/5cc242c61b3e1a63.wav"
+  },
+  {
+    "trial_id": "878d5e1c6e6f1dcd",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/878d5e1c6e6f1dcd.wav"
+  },
+  {
+    "trial_id": "b43678590a7303a8",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/b43678590a7303a8.wav"
+  },
+  {
+    "trial_id": "2f5e72327a609323",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/2f5e72327a609323.wav"
+  },
+  {
+    "trial_id": "de5391fb57f64605",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/de5391fb57f64605.wav"
+  },
+  {
+    "trial_id": "6983c2aae5a914db",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/6983c2aae5a914db.wav"
+  },
+  {
+    "trial_id": "b966f72f2b217fd0",
+    "task": "threshold",
+    "prompt": "序列里是否至少有一个数值达到 51？",
+    "choices": [
+      "false",
+      "true"
+    ],
+    "audio": "audio/b966f72f2b217fd0.wav"
+  },
+  {
+    "trial_id": "7ba687657bf1f2e4",
+    "task": "endpoint_trend",
+    "prompt": "首尾已观测数值的趋势是什么？",
+    "choices": [
+      "falling",
+      "flat",
+      "rising",
+      "undefined"
+    ],
+    "audio": "audio/7ba687657bf1f2e4.wav"
+  }
+]

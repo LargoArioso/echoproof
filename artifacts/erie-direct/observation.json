@@ -1,0 +1,3030 @@
+{
+  "schema_version": 1,
+  "claim_type": "external_compiler_observation",
+  "backend": "erie-web@1.0.1",
+  "runtime": "v24.19.0",
+  "bundle_sha256": "c0436ae77d3d7d5d9eca85291f4f62f3c9e3ca706d95cbd550c02827fbf6c6f0",
+  "lockfile_sha256": "6af8fa39304b6039015835a9915a1c3e3de0c9dab8b44b4b8f6bb0d717559f63",
+  "inputs": {
+    "left": [
+      1,
+      2,
+      3
+    ],
+    "right": [
+      10,
+      20,
+      30
+    ]
+  },
+  "tasks": {
+    "threshold_5": {
+      "left": false,
+      "right": true
+    },
+    "total": {
+      "left": 6,
+      "right": 60
+    }
+  },
+  "observations": {
+    "auto_domain_tone_streams_equal": true,
+    "auto_domain_full_queues_equal": false,
+    "shared_domain_tone_streams_equal": false,
+    "speech_left": [
+      "This stream has the following sound mappings.",
+      "The  x is mapped to time. The duration of the stream is 5  seconds",
+      "The  y is mapped to pitch. The minimum value 1 is mapped to",
+      ", and the maximum value  3 is mapped to"
+    ],
+    "speech_right": [
+      "This stream has the following sound mappings.",
+      "The  x is mapped to time. The duration of the stream is 5  seconds",
+      "The  y is mapped to pitch. The minimum value 10 is mapped to",
+      ", and the maximum value  30 is mapped to"
+    ]
+  },
+  "cases": {
+    "autoLeft": {
+      "spec": {
+        "data": {
+          "values": [
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 1,
+              "y": 2
+            },
+            {
+              "x": 2,
+              "y": 3
+            }
+          ]
+        },
+        "tone": {
+          "type": "sine",
+          "continued": false
+        },
+        "encoding": {
+          "time": {
+            "field": "x",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                2
+              ],
+              "range": [
+                0,
+                1
+              ]
+            }
+          },
+          "pitch": {
+            "field": "y",
+            "type": "quantitative",
+            "scale": {
+              "range": [
+                200,
+                800
+              ]
+            }
+          }
+        },
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true
+        }
+      },
+      "rawTone": {
+        "instrument_type": "sine",
+        "sounds": [
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 500,
+            "__datum": {
+              "x": 1,
+              "y": 2
+            }
+          },
+          {
+            "start": 0,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 200,
+            "__datum": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          {
+            "start": 1,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 800,
+            "__datum": {
+              "x": 2,
+              "y": 3
+            }
+          }
+        ],
+        "continued": false,
+        "relative": false,
+        "ramp": {
+          "time": "linear",
+          "pitch": "linear"
+        },
+        "duration": 1.5
+      },
+      "toneProjection": {
+        "continued": false,
+        "duration": 1.5,
+        "instrument_type": "sine",
+        "ramp": {
+          "pitch": "linear",
+          "time": "linear"
+        },
+        "relative": false,
+        "sounds": [
+          {
+            "duration": 0.5,
+            "pitch": 200,
+            "start": 0,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 500,
+            "start": 0.5,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 800,
+            "start": 1,
+            "timbre": "sine"
+          }
+        ]
+      },
+      "rawQueue": {
+        "queue": [
+          {
+            "group_id": 0,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "This stream has the following sound mappings."
+          },
+          {
+            "group_id": 1,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  y is mapped to pitch. The minimum value 1 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 200,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": ", and the maximum value  3 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 800,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.33,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 16.35,
+                "loudness": 0,
+                "start": 0.66,
+                "duration": 0.0495,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 1.5,
+            "instrument_type": "sine",
+            "sounds": [
+              {
+                "pitch": 200,
+                "start": 0,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 0,
+                  "y": 1
+                },
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 500,
+                "start": 0.5,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 1,
+                  "y": 2
+                },
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 800,
+                "start": 1,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 2,
+                  "y": 3
+                },
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {
+              "time": "linear",
+              "pitch": "linear"
+            }
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.0495,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0.3795,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          }
+        ],
+        "state": "finished",
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true,
+          "isRecorded": false
+        },
+        "sampledInstruments": [],
+        "sampledInstrumentSources": {},
+        "samplings": {},
+        "synths": {},
+        "waves": {},
+        "buffers": []
+      },
+      "queueProjection": {
+        "buffers": [],
+        "config": {
+          "isRecorded": false,
+          "skipDescription": true,
+          "skipFinishSpeech": true,
+          "skipScaleSpeech": true,
+          "skipStartSpeech": true,
+          "skipTitle": true
+        },
+        "queue": [
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 0,
+            "speech": "This stream has the following sound mappings.",
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 1,
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": "The  y is mapped to pitch. The minimum value 1 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 200,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": ", and the maximum value  3 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 800,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.33,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.0495,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 16.35,
+                "postReverb": 0,
+                "start": 0.66,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 1.5,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "sine",
+            "ramp": {
+              "pitch": "linear",
+              "time": "linear"
+            },
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                },
+                "pitch": 200,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                },
+                "pitch": 500,
+                "postReverb": 0,
+                "start": 0.5,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "isLast": true,
+                "modulation": 0,
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "pitch": 800,
+                "postReverb": 0,
+                "start": 1,
+                "timbre": "sine"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.0495,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0.3795,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          }
+        ],
+        "sampledInstrumentSources": {},
+        "sampledInstruments": [],
+        "samplings": {},
+        "state": "finished",
+        "synths": {},
+        "waves": {}
+      }
+    },
+    "autoRight": {
+      "spec": {
+        "data": {
+          "values": [
+            {
+              "x": 0,
+              "y": 10
+            },
+            {
+              "x": 1,
+              "y": 20
+            },
+            {
+              "x": 2,
+              "y": 30
+            }
+          ]
+        },
+        "tone": {
+          "type": "sine",
+          "continued": false
+        },
+        "encoding": {
+          "time": {
+            "field": "x",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                2
+              ],
+              "range": [
+                0,
+                1
+              ]
+            }
+          },
+          "pitch": {
+            "field": "y",
+            "type": "quantitative",
+            "scale": {
+              "range": [
+                200,
+                800
+              ]
+            }
+          }
+        },
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true
+        }
+      },
+      "rawTone": {
+        "instrument_type": "sine",
+        "sounds": [
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 500,
+            "__datum": {
+              "x": 1,
+              "y": 20
+            }
+          },
+          {
+            "start": 0,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 200,
+            "__datum": {
+              "x": 0,
+              "y": 10
+            }
+          },
+          {
+            "start": 1,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 800,
+            "__datum": {
+              "x": 2,
+              "y": 30
+            }
+          }
+        ],
+        "continued": false,
+        "relative": false,
+        "ramp": {
+          "time": "linear",
+          "pitch": "linear"
+        },
+        "duration": 1.5
+      },
+      "toneProjection": {
+        "continued": false,
+        "duration": 1.5,
+        "instrument_type": "sine",
+        "ramp": {
+          "pitch": "linear",
+          "time": "linear"
+        },
+        "relative": false,
+        "sounds": [
+          {
+            "duration": 0.5,
+            "pitch": 200,
+            "start": 0,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 500,
+            "start": 0.5,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 800,
+            "start": 1,
+            "timbre": "sine"
+          }
+        ]
+      },
+      "rawQueue": {
+        "queue": [
+          {
+            "group_id": 0,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "This stream has the following sound mappings."
+          },
+          {
+            "group_id": 1,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  y is mapped to pitch. The minimum value 10 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 200,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 800,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.33,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 16.35,
+                "loudness": 0,
+                "start": 0.66,
+                "duration": 0.0495,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 1.5,
+            "instrument_type": "sine",
+            "sounds": [
+              {
+                "pitch": 200,
+                "start": 0,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 0,
+                  "y": 10
+                },
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 500,
+                "start": 0.5,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 1,
+                  "y": 20
+                },
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 800,
+                "start": 1,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 2,
+                  "y": 30
+                },
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {
+              "time": "linear",
+              "pitch": "linear"
+            }
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.0495,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0.3795,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          }
+        ],
+        "state": "finished",
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true,
+          "isRecorded": false
+        },
+        "sampledInstruments": [],
+        "sampledInstrumentSources": {},
+        "samplings": {},
+        "synths": {},
+        "waves": {},
+        "buffers": []
+      },
+      "queueProjection": {
+        "buffers": [],
+        "config": {
+          "isRecorded": false,
+          "skipDescription": true,
+          "skipFinishSpeech": true,
+          "skipScaleSpeech": true,
+          "skipStartSpeech": true,
+          "skipTitle": true
+        },
+        "queue": [
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 0,
+            "speech": "This stream has the following sound mappings.",
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 1,
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": "The  y is mapped to pitch. The minimum value 10 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 200,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 800,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.33,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.0495,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 16.35,
+                "postReverb": 0,
+                "start": 0.66,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 1.5,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "sine",
+            "ramp": {
+              "pitch": "linear",
+              "time": "linear"
+            },
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                },
+                "pitch": 200,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                },
+                "pitch": 500,
+                "postReverb": 0,
+                "start": 0.5,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "isLast": true,
+                "modulation": 0,
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "pitch": 800,
+                "postReverb": 0,
+                "start": 1,
+                "timbre": "sine"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.0495,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0.3795,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          }
+        ],
+        "sampledInstrumentSources": {},
+        "sampledInstruments": [],
+        "samplings": {},
+        "state": "finished",
+        "synths": {},
+        "waves": {}
+      }
+    },
+    "fixedLeft": {
+      "spec": {
+        "data": {
+          "values": [
+            {
+              "x": 0,
+              "y": 1
+            },
+            {
+              "x": 1,
+              "y": 2
+            },
+            {
+              "x": 2,
+              "y": 3
+            }
+          ]
+        },
+        "tone": {
+          "type": "sine",
+          "continued": false
+        },
+        "encoding": {
+          "time": {
+            "field": "x",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                2
+              ],
+              "range": [
+                0,
+                1
+              ]
+            }
+          },
+          "pitch": {
+            "field": "y",
+            "type": "quantitative",
+            "scale": {
+              "range": [
+                200,
+                800
+              ],
+              "domain": [
+                0,
+                30
+              ]
+            }
+          }
+        },
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true
+        }
+      },
+      "rawTone": {
+        "instrument_type": "sine",
+        "sounds": [
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 240,
+            "__datum": {
+              "x": 1,
+              "y": 2
+            }
+          },
+          {
+            "start": 0,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 220,
+            "__datum": {
+              "x": 0,
+              "y": 1
+            }
+          },
+          {
+            "start": 1,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 260,
+            "__datum": {
+              "x": 2,
+              "y": 3
+            }
+          }
+        ],
+        "continued": false,
+        "relative": false,
+        "ramp": {
+          "time": "linear",
+          "pitch": "linear"
+        },
+        "duration": 1.5
+      },
+      "toneProjection": {
+        "continued": false,
+        "duration": 1.5,
+        "instrument_type": "sine",
+        "ramp": {
+          "pitch": "linear",
+          "time": "linear"
+        },
+        "relative": false,
+        "sounds": [
+          {
+            "duration": 0.5,
+            "pitch": 220,
+            "start": 0,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 240,
+            "start": 0.5,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 260,
+            "start": 1,
+            "timbre": "sine"
+          }
+        ]
+      },
+      "rawQueue": {
+        "queue": [
+          {
+            "group_id": 0,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "This stream has the following sound mappings."
+          },
+          {
+            "group_id": 1,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  y is mapped to pitch. The minimum value 0 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 200,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 800,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.33,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 16.35,
+                "loudness": 0,
+                "start": 0.66,
+                "duration": 0.0495,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 1.5,
+            "instrument_type": "sine",
+            "sounds": [
+              {
+                "pitch": 220,
+                "start": 0,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 0,
+                  "y": 1
+                },
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 240,
+                "start": 0.5,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 1,
+                  "y": 2
+                },
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 260,
+                "start": 1,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 2,
+                  "y": 3
+                },
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {
+              "time": "linear",
+              "pitch": "linear"
+            }
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.0495,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0.3795,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          }
+        ],
+        "state": "finished",
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true,
+          "isRecorded": false
+        },
+        "sampledInstruments": [],
+        "sampledInstrumentSources": {},
+        "samplings": {},
+        "synths": {},
+        "waves": {},
+        "buffers": []
+      },
+      "queueProjection": {
+        "buffers": [],
+        "config": {
+          "isRecorded": false,
+          "skipDescription": true,
+          "skipFinishSpeech": true,
+          "skipScaleSpeech": true,
+          "skipStartSpeech": true,
+          "skipTitle": true
+        },
+        "queue": [
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 0,
+            "speech": "This stream has the following sound mappings.",
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 1,
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": "The  y is mapped to pitch. The minimum value 0 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 200,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 800,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.33,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.0495,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 16.35,
+                "postReverb": 0,
+                "start": 0.66,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 1.5,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "sine",
+            "ramp": {
+              "pitch": "linear",
+              "time": "linear"
+            },
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                },
+                "pitch": 220,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                },
+                "pitch": 240,
+                "postReverb": 0,
+                "start": 0.5,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "isLast": true,
+                "modulation": 0,
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "pitch": 260,
+                "postReverb": 0,
+                "start": 1,
+                "timbre": "sine"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.0495,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0.3795,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          }
+        ],
+        "sampledInstrumentSources": {},
+        "sampledInstruments": [],
+        "samplings": {},
+        "state": "finished",
+        "synths": {},
+        "waves": {}
+      }
+    },
+    "fixedRight": {
+      "spec": {
+        "data": {
+          "values": [
+            {
+              "x": 0,
+              "y": 10
+            },
+            {
+              "x": 1,
+              "y": 20
+            },
+            {
+              "x": 2,
+              "y": 30
+            }
+          ]
+        },
+        "tone": {
+          "type": "sine",
+          "continued": false
+        },
+        "encoding": {
+          "time": {
+            "field": "x",
+            "type": "quantitative",
+            "scale": {
+              "domain": [
+                0,
+                2
+              ],
+              "range": [
+                0,
+                1
+              ]
+            }
+          },
+          "pitch": {
+            "field": "y",
+            "type": "quantitative",
+            "scale": {
+              "range": [
+                200,
+                800
+              ],
+              "domain": [
+                0,
+                30
+              ]
+            }
+          }
+        },
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true
+        }
+      },
+      "rawTone": {
+        "instrument_type": "sine",
+        "sounds": [
+          {
+            "start": 0.5,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 599.9999999999999,
+            "__datum": {
+              "x": 1,
+              "y": 20
+            }
+          },
+          {
+            "start": 0,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 400,
+            "__datum": {
+              "x": 0,
+              "y": 10
+            }
+          },
+          {
+            "start": 1,
+            "duration": 0.5,
+            "timbre": "sine",
+            "pitch": 800,
+            "__datum": {
+              "x": 2,
+              "y": 30
+            }
+          }
+        ],
+        "continued": false,
+        "relative": false,
+        "ramp": {
+          "time": "linear",
+          "pitch": "linear"
+        },
+        "duration": 1.5
+      },
+      "toneProjection": {
+        "continued": false,
+        "duration": 1.5,
+        "instrument_type": "sine",
+        "ramp": {
+          "pitch": "linear",
+          "time": "linear"
+        },
+        "relative": false,
+        "sounds": [
+          {
+            "duration": 0.5,
+            "pitch": 400,
+            "start": 0,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 599.9999999999999,
+            "start": 0.5,
+            "timbre": "sine"
+          },
+          {
+            "duration": 0.5,
+            "pitch": 800,
+            "start": 1,
+            "timbre": "sine"
+          }
+        ]
+      },
+      "rawQueue": {
+        "queue": [
+          {
+            "group_id": 0,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "This stream has the following sound mappings."
+          },
+          {
+            "group_id": 1,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": "The  y is mapped to pitch. The minimum value 0 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 200,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 2,
+            "type": "text",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75
+          },
+          {
+            "group_id": 2,
+            "type": "tone",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "instrument_type": "sine",
+            "start": 0,
+            "end": 0.3,
+            "duration": 0.3,
+            "pitch": 800,
+            "loudness": 1,
+            "postReverb": 0,
+            "timbre": "sine",
+            "modulation": 0,
+            "harmonicity": 0,
+            "others": {
+              "start": 0
+            },
+            "filters": []
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.33,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 16.35,
+                "loudness": 0,
+                "start": 0.66,
+                "duration": 0.0495,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 1.5,
+            "instrument_type": "sine",
+            "sounds": [
+              {
+                "pitch": 400,
+                "start": 0,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 0,
+                  "y": 10
+                },
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 599.9999999999999,
+                "start": 0.5,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 1,
+                  "y": 20
+                },
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                }
+              },
+              {
+                "pitch": 800,
+                "start": 1,
+                "duration": 0.5,
+                "postReverb": 0,
+                "timbre": "sine",
+                "modulation": 0,
+                "harmonicity": 0,
+                "__datum": {
+                  "x": 2,
+                  "y": 30
+                },
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {
+              "time": "linear",
+              "pitch": "linear"
+            }
+          },
+          {
+            "group_id": 3,
+            "type": "tone-series",
+            "config": {
+              "skipScaleSpeech": true,
+              "skipTitle": true,
+              "skipDescription": true,
+              "skipStartSpeech": true,
+              "skipFinishSpeech": true,
+              "isRecorded": false
+            },
+            "duration": 0.7095,
+            "instrument_type": "chimeSynth",
+            "sounds": [
+              {
+                "pitch": 783.99,
+                "loudness": 1,
+                "start": 0.0495,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                }
+              },
+              {
+                "pitch": 523.25,
+                "loudness": 1,
+                "start": 0.3795,
+                "duration": 0.33,
+                "postReverb": 0,
+                "timbre": "chimeSynth",
+                "modulation": 0,
+                "harmonicity": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "isLast": true
+              }
+            ],
+            "continued": false,
+            "relative": false,
+            "filters": [],
+            "ramp": {}
+          }
+        ],
+        "state": "finished",
+        "config": {
+          "skipScaleSpeech": true,
+          "skipTitle": true,
+          "skipDescription": true,
+          "skipStartSpeech": true,
+          "skipFinishSpeech": true,
+          "isRecorded": false
+        },
+        "sampledInstruments": [],
+        "sampledInstrumentSources": {},
+        "samplings": {},
+        "synths": {},
+        "waves": {},
+        "buffers": []
+      },
+      "queueProjection": {
+        "buffers": [],
+        "config": {
+          "isRecorded": false,
+          "skipDescription": true,
+          "skipFinishSpeech": true,
+          "skipScaleSpeech": true,
+          "skipStartSpeech": true,
+          "skipTitle": true
+        },
+        "queue": [
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 0,
+            "speech": "This stream has the following sound mappings.",
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 1,
+            "speech": "The  x is mapped to time. The duration of the stream is 5  seconds",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": "The  y is mapped to pitch. The minimum value 0 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 200,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "group_id": 2,
+            "speech": ", and the maximum value  30 is mapped to",
+            "speechRate": 1.75,
+            "type": "text"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "duration": 0.3,
+            "end": 0.3,
+            "filters": [],
+            "group_id": 2,
+            "harmonicity": 0,
+            "instrument_type": "sine",
+            "loudness": 1,
+            "modulation": 0,
+            "others": {
+              "start": 0
+            },
+            "pitch": 800,
+            "postReverb": 0,
+            "start": 0,
+            "timbre": "sine",
+            "type": "tone"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.33,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.33,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.0495,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.66,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 16.35,
+                "postReverb": 0,
+                "start": 0.66,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 1.5,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "sine",
+            "ramp": {
+              "pitch": "linear",
+              "time": "linear"
+            },
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0,
+                  "timbre": "sine"
+                },
+                "pitch": 400,
+                "postReverb": 0,
+                "start": 0,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "modulation": 0,
+                "others": {
+                  "start": 0.5,
+                  "timbre": "sine"
+                },
+                "pitch": 599.9999999999999,
+                "postReverb": 0,
+                "start": 0.5,
+                "timbre": "sine"
+              },
+              {
+                "duration": 0.5,
+                "harmonicity": 0,
+                "isLast": true,
+                "modulation": 0,
+                "others": {
+                  "start": 1,
+                  "timbre": "sine"
+                },
+                "pitch": 800,
+                "postReverb": 0,
+                "start": 1,
+                "timbre": "sine"
+              }
+            ],
+            "type": "tone-series"
+          },
+          {
+            "config": {
+              "isRecorded": false,
+              "skipDescription": true,
+              "skipFinishSpeech": true,
+              "skipScaleSpeech": true,
+              "skipStartSpeech": true,
+              "skipTitle": true
+            },
+            "continued": false,
+            "duration": 0.7095,
+            "filters": [],
+            "group_id": 3,
+            "instrument_type": "chimeSynth",
+            "ramp": {},
+            "relative": false,
+            "sounds": [
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.0495,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 783.99,
+                "postReverb": 0,
+                "start": 0.0495,
+                "timbre": "chimeSynth"
+              },
+              {
+                "duration": 0.33,
+                "harmonicity": 0,
+                "isLast": true,
+                "loudness": 1,
+                "modulation": 0,
+                "others": {
+                  "start": 0.3795,
+                  "timbre": "chimeSynth"
+                },
+                "pitch": 523.25,
+                "postReverb": 0,
+                "start": 0.3795,
+                "timbre": "chimeSynth"
+              }
+            ],
+            "type": "tone-series"
+          }
+        ],
+        "sampledInstrumentSources": {},
+        "sampledInstruments": [],
+        "samplings": {},
+        "state": "finished",
+        "synths": {},
+        "waves": {}
+      }
+    }
+  },
+  "scope": "Headless compilation of these explicit specs only. Tone-only equality is not equality of the complete sonification: the generated speech legend differs. No browser playback or human testing performed."
+}

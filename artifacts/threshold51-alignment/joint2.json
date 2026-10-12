@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "claim_type": "simultaneous_threshold_alignment",
+  "original_mapping": {
+    "domain_low": "0",
+    "domain_high": "100",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "thresholds": [
+    "51",
+    "250/3"
+  ],
+  "input_low": "0",
+  "input_high": "100",
+  "limit": 4,
+  "constraints": {
+    "covered_low": "0",
+    "covered_high": "100",
+    "minimum_transition_spacing": "100/3",
+    "smallest_threshold_gap": "97/3"
+  },
+  "scope": "Complete finite search of linear fixed ranges retaining the pitch span and step and covering the original range plus declared closed interval. Positive-length series, no missing samples, stride = 1. Event-level claim, no human listening claim.",
+  "status": "impossible",
+  "reason": "Distinct thresholds are closer than the minimum possible transition spacing",
+  "candidates": [],
+  "search": {
+    "transition_count": 3,
+    "index_pairs_checked": 0,
+    "feasible_ranges": 0
+  }
+}

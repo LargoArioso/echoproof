@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "claim_type": "continuous_interval_task",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "10",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 100,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "task": "missing_count",
+  "input_low": "0",
+  "input_high": "10",
+  "threshold": "5",
+  "assumptions": [
+    "fixed scale",
+    "stride = 1",
+    "no missing samples",
+    "positive-length series"
+  ],
+  "scope": "All positive-length original input series whose real samples lie in this closed interval under the exact EchoProof mapping. Event-level result, not an external library or human hearing proof.",
+  "status": "preserved",
+  "reason": "No missing samples are admitted, so every missing-count answer is zero.",
+  "witness": null
+}

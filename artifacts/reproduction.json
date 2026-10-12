@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "offline": true,
+  "external_backend_execution": false,
+  "recordings_mode": "saved recordings rechecked, backend not rerun",
+  "source_sha256": {
+    "echoproof/__init__.py": "18af5c18aa07af441b1a525fc1912b0dfd55f7330f094fb4841466a6884ea6b5",
+    "echoproof/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "echoproof/alignment.py": "2fb00579d5cbba21642c1cbc0da08e5a6d19d12f3c885cf3f8b405a9c3c8c327",
+    "echoproof/audio.py": "d7873429674df97e346c89b26be1cbc14045ee8955ed828896642d9390c2eda9",
+    "echoproof/audit.py": "2de4d0c5ad414e6a9bbcbb0dcc0d760ea87827655b8211dbc0c03ffa2416763b",
+    "echoproof/cli.py": "8040499354325d1e2aade64fcad0c96638f45c1a896cf79c17b6c9548a6d1a17",
+    "echoproof/compiled.py": "bf4b15747586a8ba48a0f6450703427ef3a7ab1315bf6487b3767e5036a53a73",
+    "echoproof/contracts.py": "f1facb54f688eb1efc5b3d7b35b0b067d67ef3c93a8c5e749f9b1285d7339ec0",
+    "echoproof/cues.py": "349c11e8fe437e29a53a0d8d7108e56309d1d5610399cd33a08f7a869638996c",
+    "echoproof/decision.py": "a9c3055af32f90b1aad636cc0276a0af1acf37d8b8685d1aeb5459012259c54c",
+    "echoproof/diagnosis.py": "1fb3d269524c073422b8a0fe88c41ac6aa1108bacb2315e81deb1c89cba96eb9",
+    "echoproof/interval_tasks.py": "34217746bc47d9d987e3d2d7d802d5bf3b8c7abf54a61a5b2c25ea4e8559972a",
+    "echoproof/intervals.py": "1bbc39fe4074aca84c9d88dbde80fc265f84d2bc8485e650150f36c513c4dd78",
+    "echoproof/model.py": "5755f4b9c45050fc9137aeaa9c1178e6cef5dde249f9fc619ee9b2a25bfe6c7f",
+    "echoproof/multi_alignment.py": "c561e3cf90384b99a4b1cc3cc720b74042856e190e6713a95362ceddf2589b0b",
+    "echoproof/partition.py": "5e74806e54ffbcbb6629df3eb9e7e397a38f4163104f2c8a5fd11b7195ccf5a2",
+    "echoproof/probe.py": "a5943d705d8bfd67aaee0aa3caa182d61cf94f6d3a16e4a86eb8b3984b6eb8d5",
+    "echoproof/report.py": "473ae977e200a2f8d466b1fefda2d7dbf04f435d06d7cfe368c8baf8d4d22613",
+    "echoproof/semantic_cues.py": "17beb2d41c8ba2f2dc88cdf823520e444e3a729349f3b2ce3cbd067653aaf15b",
+    "echoproof/serialization.py": "15709683c90354e85e7c8bc6359c569b539594f98b2497151f8e5ecdbee66315",
+    "echoproof/study.py": "3a72b6246e9de0a68cf58b70c6699dc8a2277d2f9aa885ec3c79592dc3c4f3e6",
+    "echoproof/study_export.py": "5cf336923c79637dba60d1d29b22090ed40acbf0b186164340919d934f6cdded",
+    "echoproof/tasks.py": "d8dd80ed701c73952f9d0c0037079202c6889c4ded30641dda4fd92972a46ec8",
+    "echoproof/trace.py": "ffeb867db5fdd4c2c706004aa79876d5d6da19fc16e6ea69908c27da38477512",
+    "echoproof/uncertainty.py": "fc1e065f25ab306da45725921cd3ea4ec0ef01eaf9f0ec526e2fbf2df34621bf"
+  },
+  "stage_count": 24,
+  "stages": [
+    {
+      "label": "five finite domains and two analytic certificates",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "demo",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/demo"
+      ],
+      "exit_code": 0,
+      "stdout": "\nnormalization\n<ISOLATED_RUN>/artifacts/demo/normalization/index.html\n36 series, 16 render classes\nthreshold: collision_found (4 disagreeing pairs)\ntotal: collision_found (30 disagreeing pairs)\n\nquantization\n<ISOLATED_RUN>/artifacts/demo/quantization/index.html\n36 series, 12 render classes\nthreshold: collision_found (24 disagreeing pairs)\nendpoint_trend: collision_found (30 disagreeing pairs)\npeak_indices: collision_found (47 disagreeing pairs)\n\nmissing\n<ISOLATED_RUN>/artifacts/demo/missing/index.html\n80 series, 36 render classes\nmissing_count: collision_found (73 disagreeing pairs)\nendpoint_trend: collision_found (53 disagreeing pairs)\n\nsampling\n<ISOLATED_RUN>/artifacts/demo/sampling/index.html\n108 series, 9 render classes\nthreshold: collision_found (20 disagreeing pairs)\npeak_indices: collision_found (467 disagreeing pairs)\nendpoint_trend: collision_found (315 disagreeing pairs)\n\nclipping\n<ISOLATED_RUN>/artifacts/demo/clipping/index.html\n80 series, 12 render classes\nthreshold: collision_found (68 disagreeing pairs)\nendpoint_trend: collision_found (297 disagreeing pairs)\ntotal: collision_found (433 disagreeing pairs)\n\nOverview: <ISOLATED_RUN>/artifacts/demo/index.html\n",
+      "stderr": ""
+    },
+    {
+      "label": "finite conditional binary cues",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "cues",
+        "<ISOLATED_RUN>/artifacts/demo/quantization/audit.json",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/cues-quantization"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/cues-quantization\n{\n  \"series_count\": 36,\n  \"base_render_classes\": 12,\n  \"ambiguous_classes\": 10,\n  \"max_joint_answers_per_class\": 8,\n  \"worst_case_bits\": 3,\n  \"worst_case_binary_lower_bound\": 3\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "ideal decoder bound: original events",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "decision-bound",
+        "<ISOLATED_RUN>/artifacts/demo/quantization/audit.json",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/decision-base"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/decision-base/index.html\n{\n  \"maximum_correct_mass\": \"12\",\n  \"minimum_error_mass\": \"24\",\n  \"maximum_accuracy\": \"1/3\",\n  \"minimum_error_probability\": \"2/3\",\n  \"no_event_maximum_accuracy\": \"1/6\",\n  \"no_event_optimal_prediction\": [\n    true,\n    \"falling\",\n    [\n      0\n    ]\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "ideal decoder bound: conditional cues",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "decision-bound",
+        "<ISOLATED_RUN>/artifacts/demo/quantization/audit.json",
+        "--representation",
+        "conditional_task_cues",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/decision-cued"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/decision-cued/index.html\n{\n  \"maximum_correct_mass\": \"36\",\n  \"minimum_error_mass\": \"0\",\n  \"maximum_accuracy\": \"1\",\n  \"minimum_error_probability\": \"0\",\n  \"no_event_maximum_accuracy\": \"1/6\",\n  \"no_event_optimal_prediction\": [\n    true,\n    \"falling\",\n    [\n      0\n    ]\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "matched listening materials",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "study-kit",
+        "<ISOLATED_RUN>/artifacts/demo/quantization/audit.json",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/study-kit"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/study-kit/PROTOCOL.md\n{\n  \"source_series\": 36,\n  \"selected_groups\": 4,\n  \"cases\": 10,\n  \"trials_per_session\": 20,\n  \"balanced_within_each_group\": true,\n  \"participant_results\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "listening material files",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "check-study",
+        "<ISOLATED_RUN>/artifacts/study-kit"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"trial_wav_verified\": 40,\n  \"training_wav_verified\": 6,\n  \"participant_results_inspected\": false,\n  \"scope\": \"Materials only; response collection or human efficacy not verified.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "fixed semantic cues",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "semantic-cues",
+        "<ISOLATED_RUN>/artifacts/demo/normalization/audit.json",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/semantic-normalization"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/semantic-normalization/index.html\n{\n  \"checked_series\": 36,\n  \"augmented_render_classes\": 18,\n  \"decode_failures\": 0,\n  \"answer_collision_classes\": 0,\n  \"added_duration_ms\": [\n    1740\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "CSV candidate corpus",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "probe",
+        "<PROJECT_ROOT>/examples/measurements.csv",
+        "--column",
+        "value",
+        "--spec",
+        "<PROJECT_ROOT>/examples/per-series.json",
+        "--threshold",
+        "3",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/csv-probe"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/csv-probe/index.html\n52 explicit candidates; coverage is limited to the saved corpus\n",
+      "stderr": ""
+    },
+    {
+      "label": "single threshold repair",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "align-threshold",
+        "--spec",
+        "<PROJECT_ROOT>/examples/coarse-pitch.json",
+        "--threshold",
+        "51",
+        "--input-low",
+        "0",
+        "--input-high",
+        "100",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/threshold51-alignment.json"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/threshold51-alignment.json\n3 candidates; pitch range and step retained\n<ISOLATED_RUN>/artifacts/threshold51-alignment/index.html\n",
+      "stderr": ""
+    },
+    {
+      "label": "unmodified archived NOAA windows",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/real_data_case.py",
+        "<ISOLATED_RUN>/artifacts/noaa-windows"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"observations\": 67,\n  \"windows\": 65,\n  \"classes\": 15,\n  \"task_pairs\": {\n    \"threshold\": 49,\n    \"endpoint_trend\": 0,\n    \"peak_indices\": 0,\n    \"missing_count\": 0,\n    \"total\": 165\n  },\n  \"full_pair_years\": [\n    [\n      1960,\n      1961,\n      1962\n    ],\n    [\n      2013,\n      2014,\n      2015\n    ]\n  ],\n  \"raw_sha256\": \"bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "archived threshold positions and counts",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/real_data_partition.py",
+        "<ISOLATED_RUN>/artifacts/noaa-partition"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"observations\": 67,\n  \"windows\": 65,\n  \"original_render_classes\": 10,\n  \"partition_render_classes\": 10,\n  \"profile_disagreeing_pairs\": {\n    \"350\": {\n      \"original\": 179,\n      \"partition\": 0\n    },\n    \"400\": {\n      \"original\": 53,\n      \"partition\": 0\n    },\n    \"420\": {\n      \"original\": 9,\n      \"partition\": 0\n    }\n  },\n  \"profile_decode_failures\": 0\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "continuous task preservation",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "interval-audit",
+        "--input-low",
+        "0",
+        "--input-high",
+        "10",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/continuous-tasks"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/continuous-tasks/index.html\n{\n  \"threshold\": \"collision_found\",\n  \"endpoint_trend\": \"collision_found\",\n  \"peak_indices\": \"collision_found\",\n  \"missing_count\": \"preserved\",\n  \"total\": \"collision_found\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "simultaneous infeasibility",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "align-thresholds",
+        "--spec",
+        "<PROJECT_ROOT>/examples/coarse-pitch.json",
+        "--thresholds",
+        "50,51",
+        "--input-low",
+        "0",
+        "--input-high",
+        "100",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/multi-threshold50-51.json"
+      ],
+      "exit_code": 0,
+      "stdout": "impossible: Distinct thresholds are closer than the minimum possible transition spacing\n<ISOLATED_RUN>/artifacts/multi-threshold50-51.json\n",
+      "stderr": ""
+    },
+    {
+      "label": "nonuniform task partition",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "partition-thresholds",
+        "--spec",
+        "<PROJECT_ROOT>/examples/coarse-pitch.json",
+        "--thresholds",
+        "50,51",
+        "--input-low",
+        "0",
+        "--input-high",
+        "100",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/partition-thresholds"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/partition-thresholds/index.html\npreserved: Every requested nonconstant threshold is a bin boundary; the construction attains the scoped alphabet lower bound\n",
+      "stderr": ""
+    },
+    {
+      "label": "same-domain decision comparison",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/decision_comparison.py",
+        "<ISOLATED_RUN>/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"metrics\": {\n    \"Original events\": {\n      \"maximum_joint_accuracy\": \"1/2\",\n      \"weighted_mean_duration_ms\": \"660\",\n      \"used_pitch_count\": 2\n    },\n    \"Conditional binary cues\": {\n      \"maximum_joint_accuracy\": \"1\",\n      \"weighted_mean_duration_ms\": \"1260\",\n      \"used_pitch_count\": 5\n    },\n    \"Fixed semantic cues\": {\n      \"maximum_joint_accuracy\": \"1\",\n      \"weighted_mean_duration_ms\": \"2400\",\n      \"used_pitch_count\": 6\n    },\n    \"Nonuniform partition\": {\n      \"maximum_joint_accuracy\": \"1\",\n      \"weighted_mean_duration_ms\": \"660\",\n      \"used_pitch_count\": 3\n    }\n  },\n  \"pareto_front\": [\n    \"Nonuniform partition\",\n    \"Original events\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "observation interval identifiability",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/observation_cases.py",
+        "<ISOLATED_RUN>/artifacts/observation-uncertainty"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/observation-uncertainty\n",
+      "stderr": ""
+    },
+    {
+      "label": "single-entry scoped threshold diagnosis",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/diagnosis_cases.py",
+        "<ISOLATED_RUN>/artifacts/diagnosis-cases"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/diagnosis-cases\n",
+      "stderr": ""
+    },
+    {
+      "label": "saved recording recheck: erie-mean-full",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "compiled",
+        "<ISOLATED_RUN>/artifacts/erie-corpus/aggregate-mean.corpus.json",
+        "--scope",
+        "erie_full_queue",
+        "--threshold",
+        "3",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/erie-mean-full"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/erie-mean-full/index.html\n27 recordings, 8 projected output classes; scope=erie_full_queue\n",
+      "stderr": ""
+    },
+    {
+      "label": "saved recording recheck: erie-auto-full",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "compiled",
+        "<ISOLATED_RUN>/artifacts/erie-corpus/auto-domain.corpus.json",
+        "--scope",
+        "erie_full_queue",
+        "--threshold",
+        "3",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/erie-auto-full"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/erie-auto-full/index.html\n27 recordings, 27 projected output classes; scope=erie_full_queue\n",
+      "stderr": ""
+    },
+    {
+      "label": "saved recording recheck: erie-auto-tone",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "compiled",
+        "<ISOLATED_RUN>/artifacts/erie-corpus/auto-domain.corpus.json",
+        "--scope",
+        "erie_tone_stream",
+        "--threshold",
+        "3",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/erie-auto-tone"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/erie-auto-tone/index.html\n27 recordings, 13 projected output classes; scope=erie_tone_stream\n",
+      "stderr": ""
+    },
+    {
+      "label": "saved recording recheck: highcharts-threshold51",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "compiled",
+        "<ISOLATED_RUN>/artifacts/highcharts-mapping/corpus.json",
+        "--scope",
+        "highcharts_mapped_instrument",
+        "--threshold",
+        "51",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/highcharts-threshold51"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/highcharts-threshold51/index.html\n27 recordings, 8 projected output classes; scope=highcharts_mapped_instrument\n",
+      "stderr": ""
+    },
+    {
+      "label": "saved recording recheck: highcharts-threshold50",
+      "command": [
+        "python3",
+        "-m",
+        "echoproof",
+        "compiled",
+        "<ISOLATED_RUN>/artifacts/highcharts-mapping/corpus.json",
+        "--scope",
+        "highcharts_mapped_instrument",
+        "--threshold",
+        "50",
+        "--out",
+        "<ISOLATED_RUN>/artifacts/highcharts-threshold50"
+      ],
+      "exit_code": 0,
+      "stdout": "<ISOLATED_RUN>/artifacts/highcharts-threshold50/index.html\n27 recordings, 8 projected output classes; scope=highcharts_mapped_instrument\n",
+      "stderr": ""
+    },
+    {
+      "label": "artifact certificates, links and WAV",
+      "command": [
+        "python3",
+        "<PROJECT_ROOT>/tools/validate_artifacts.py",
+        "<ISOLATED_RUN>/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_certificates\": 79,\n  \"verified_complete_finite_audits\": 25,\n  \"deletion_traces_with_parent_membership\": 19,\n  \"study_trial_wav_files_verified\": 40,\n  \"real_data_partition_windows_verified\": 65,\n  \"figure_prior_points_verified\": 0,\n  \"verified_recording_witnesses_backend_not_rerun\": 12,\n  \"real_data_window_pairs_verified_against_archive\": 1,\n  \"html_pages\": 39,\n  \"embedded_wav_payloads\": 108,\n  \"valid_local_links\": 110,\n  \"visual_inspection\": \"not performed: local browser access blocked\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "label": "automated tests",
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "<PROJECT_ROOT>/tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "stdout": "<TEMP_OUTPUT>\n2 recordings, 1 projected output classes; scope=erie_full_queue\nRECORDING_VERIFIED (backend not rerun)\n<TEMP_OUTPUT>\n6 series, 4 render classes\ntotal: collision_found (2 disagreeing pairs)\nVERIFIED\n<TEMP_OUTPUT>\n{\n  \"series_count\": 4,\n  \"base_render_classes\": 3,\n  \"ambiguous_classes\": 1,\n  \"max_joint_answers_per_class\": 2,\n  \"worst_case_bits\": 1,\n  \"worst_case_binary_lower_bound\": 1\n}\nVERIFIED\n<TEMP_OUTPUT>\n35 explicit candidates; coverage is limited to the saved corpus\nINVALID\n",
+      "stderr": "----------------------------------------------------------------------\nRan 174 tests in 8.561s\n\nOK\n"
+    }
+  ],
+  "scope": "Rebuilt in an isolated empty output directory using the source identified above. No network access requested. Structural checks do not establish browser visual or auditory validation.",
+  "publication_redaction": {
+    "applied": true,
+    "scope": "Machine-specific absolute paths only; commands/output are not verbatim raw logs. Status, counts and SHA-256 values retained.",
+    "placeholders": [
+      "<PROJECT_ROOT>",
+      "<ISOLATED_RUN>",
+      "<TEMP_OUTPUT>"
+    ]
+  }
+}

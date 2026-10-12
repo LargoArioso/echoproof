@@ -1,0 +1,2327 @@
+{
+  "schema_version": 1,
+  "claim_type": "matched_study_materials",
+  "source_audit": {
+    "schema_version": 1,
+    "claim_type": "finite_task_audit",
+    "engine_version": "0.1.0",
+    "mapping": {
+      "domain_low": "0",
+      "domain_high": "100",
+      "normalization": "fixed",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 1200,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "domain": {
+      "levels": [
+        "49",
+        "50",
+        "51"
+      ],
+      "lengths": [
+        2,
+        3
+      ],
+      "include_missing": false,
+      "threshold": "51"
+    },
+    "task_order": [
+      "threshold",
+      "endpoint_trend",
+      "peak_indices"
+    ],
+    "search": {
+      "mode": "exhaustive_finite_grid",
+      "series_count": 36,
+      "render_classes": 12,
+      "collision_classes": 10,
+      "equal_render_pairs": 57,
+      "identity_sha256": "8155b8bf8ea39d8d1c9b6899d8fac8739eb5c51774b4b1aef44202367731a066"
+    },
+    "tasks": {
+      "threshold": {
+        "ambiguous_render_classes": 10,
+        "affected_series": 34,
+        "disagreeing_pairs": 24,
+        "witness": {
+          "left": [
+            "50"
+          ],
+          "right": [
+            "51"
+          ],
+          "task": "threshold",
+          "threshold": "51",
+          "left_answer": false,
+          "right_answer": true,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "original_witness": {
+          "left": [
+            "49",
+            "50"
+          ],
+          "right": [
+            "49",
+            "51"
+          ],
+          "task": "threshold",
+          "threshold": "51",
+          "left_answer": false,
+          "right_answer": true,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 6000,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision"
+        },
+        "minimization_trace": {
+          "schema_version": 1,
+          "claim_type": "paired_deletion_trace",
+          "original": {
+            "left": [
+              "49",
+              "50"
+            ],
+            "right": [
+              "49",
+              "51"
+            ],
+            "task": "threshold",
+            "threshold": "51",
+            "left_answer": false,
+            "right_answer": true,
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 6000,
+                  "kind": "tone"
+                },
+                {
+                  "onset_ms": 240,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 480
+            },
+            "claim": "exact_render_collision"
+          },
+          "final": {
+            "left": [
+              "50"
+            ],
+            "right": [
+              "51"
+            ],
+            "task": "threshold",
+            "threshold": "51",
+            "left_answer": false,
+            "right_answer": true,
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 240
+            },
+            "claim": "exact_render_collision",
+            "minimization": "paired-deletion 1-minimal"
+          },
+          "removed_original_indices": [
+            0
+          ],
+          "retained_left_indices": [
+            1
+          ],
+          "retained_right_indices": [
+            1
+          ],
+          "status": "one_minimal",
+          "audit_identity_sha256": "8155b8bf8ea39d8d1c9b6899d8fac8739eb5c51774b4b1aef44202367731a066",
+          "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+        },
+        "status": "collision_found"
+      },
+      "endpoint_trend": {
+        "ambiguous_render_classes": 3,
+        "affected_series": 16,
+        "disagreeing_pairs": 30,
+        "witness": {
+          "left": [
+            "50",
+            "50"
+          ],
+          "right": [
+            "50",
+            "51"
+          ],
+          "task": "endpoint_trend",
+          "threshold": "51",
+          "left_answer": "flat",
+          "right_answer": "rising",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "original_witness": {
+          "left": [
+            "50",
+            "50"
+          ],
+          "right": [
+            "50",
+            "51"
+          ],
+          "task": "endpoint_trend",
+          "threshold": "51",
+          "left_answer": "flat",
+          "right_answer": "rising",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision"
+        },
+        "minimization_trace": {
+          "schema_version": 1,
+          "claim_type": "paired_deletion_trace",
+          "original": {
+            "left": [
+              "50",
+              "50"
+            ],
+            "right": [
+              "50",
+              "51"
+            ],
+            "task": "endpoint_trend",
+            "threshold": "51",
+            "left_answer": "flat",
+            "right_answer": "rising",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                },
+                {
+                  "onset_ms": 240,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 480
+            },
+            "claim": "exact_render_collision"
+          },
+          "final": {
+            "left": [
+              "50",
+              "50"
+            ],
+            "right": [
+              "50",
+              "51"
+            ],
+            "task": "endpoint_trend",
+            "threshold": "51",
+            "left_answer": "flat",
+            "right_answer": "rising",
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                },
+                {
+                  "onset_ms": 240,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 480
+            },
+            "claim": "exact_render_collision",
+            "minimization": "paired-deletion 1-minimal"
+          },
+          "removed_original_indices": [],
+          "retained_left_indices": [
+            0,
+            1
+          ],
+          "retained_right_indices": [
+            0,
+            1
+          ],
+          "status": "one_minimal",
+          "audit_identity_sha256": "8155b8bf8ea39d8d1c9b6899d8fac8739eb5c51774b4b1aef44202367731a066",
+          "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+        },
+        "status": "collision_found"
+      },
+      "peak_indices": {
+        "ambiguous_render_classes": 5,
+        "affected_series": 24,
+        "disagreeing_pairs": 47,
+        "witness": {
+          "left": [
+            "50",
+            "50"
+          ],
+          "right": [
+            "50",
+            "51"
+          ],
+          "task": "peak_indices",
+          "threshold": "51",
+          "left_answer": [
+            0,
+            1
+          ],
+          "right_answer": [
+            1
+          ],
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "original_witness": {
+          "left": [
+            "50",
+            "50"
+          ],
+          "right": [
+            "50",
+            "51"
+          ],
+          "task": "peak_indices",
+          "threshold": "51",
+          "left_answer": [
+            0,
+            1
+          ],
+          "right_answer": [
+            1
+          ],
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "100",
+            "normalization": "fixed",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 1200,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 7200,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 480
+          },
+          "claim": "exact_render_collision"
+        },
+        "minimization_trace": {
+          "schema_version": 1,
+          "claim_type": "paired_deletion_trace",
+          "original": {
+            "left": [
+              "50",
+              "50"
+            ],
+            "right": [
+              "50",
+              "51"
+            ],
+            "task": "peak_indices",
+            "threshold": "51",
+            "left_answer": [
+              0,
+              1
+            ],
+            "right_answer": [
+              1
+            ],
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                },
+                {
+                  "onset_ms": 240,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 480
+            },
+            "claim": "exact_render_collision"
+          },
+          "final": {
+            "left": [
+              "50",
+              "50"
+            ],
+            "right": [
+              "50",
+              "51"
+            ],
+            "task": "peak_indices",
+            "threshold": "51",
+            "left_answer": [
+              0,
+              1
+            ],
+            "right_answer": [
+              1
+            ],
+            "mapping": {
+              "domain_low": "0",
+              "domain_high": "100",
+              "normalization": "fixed",
+              "pitch_low_cents": 4800,
+              "pitch_high_cents": 8400,
+              "pitch_step_cents": 1200,
+              "missing": "silence",
+              "stride": 1,
+              "note_ms": 180,
+              "slot_ms": 240
+            },
+            "render": {
+              "events": [
+                {
+                  "onset_ms": 0,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                },
+                {
+                  "onset_ms": 240,
+                  "duration_ms": 180,
+                  "pitch_cents": 7200,
+                  "kind": "tone"
+                }
+              ],
+              "duration_ms": 480
+            },
+            "claim": "exact_render_collision",
+            "minimization": "paired-deletion 1-minimal"
+          },
+          "removed_original_indices": [],
+          "retained_left_indices": [
+            0,
+            1
+          ],
+          "retained_right_indices": [
+            0,
+            1
+          ],
+          "status": "one_minimal",
+          "audit_identity_sha256": "8155b8bf8ea39d8d1c9b6899d8fac8739eb5c51774b4b1aef44202367731a066",
+          "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+        },
+        "status": "collision_found"
+      }
+    },
+    "scope": "Exact event equality in EchoProof's discrete renderer. No human perceptual claim; no guarantee outside this finite grid or explicitly listed corpus."
+  },
+  "parameters": {
+    "tasks": [
+      "threshold",
+      "endpoint_trend"
+    ],
+    "groups_per_task": 2,
+    "repetitions": 2,
+    "seed": 20261012
+  },
+  "selected_groups": [
+    {
+      "group_id": "threshold-0",
+      "task": "threshold",
+      "answer_labels": [
+        "false",
+        "true"
+      ],
+      "base_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "base_wav_sha256": "ebce3bac574b23364c440861d3e9b3480b4e3b8866fabe97160cb49b56ae532b"
+    },
+    {
+      "group_id": "threshold-1",
+      "task": "threshold",
+      "answer_labels": [
+        "false",
+        "true"
+      ],
+      "base_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "base_wav_sha256": "03938b2edaa2eec7b0ea2bcc902579dc25376ab4f2dee25a40c4b804f94c42b8"
+    },
+    {
+      "group_id": "endpoint_trend-0",
+      "task": "endpoint_trend",
+      "answer_labels": [
+        "falling",
+        "flat",
+        "rising"
+      ],
+      "base_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "base_wav_sha256": "7329c287f29273c1b653602f7148eeaaedf2b7305635574ad9aef055ae6c7e28"
+    },
+    {
+      "group_id": "endpoint_trend-1",
+      "task": "endpoint_trend",
+      "answer_labels": [
+        "falling",
+        "flat",
+        "rising"
+      ],
+      "base_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "base_wav_sha256": "68055c3e9ddf325bee74ebb38e275c402bf7e63bc6e6bc6268db8ec8969785db"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case-0",
+      "group_id": "threshold-0",
+      "task": "threshold",
+      "values": [
+        "49",
+        "50"
+      ],
+      "expected_answer": false,
+      "answer_label": "false",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3600,
+            "kind": "semantic_threshold_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1260
+      },
+      "semantic_wav_sha256": "dfba9c44613de0532eb40adc4ad035581b7a9682f541cf2c21261e92b4d72ac8"
+    },
+    {
+      "case_id": "case-1",
+      "group_id": "threshold-0",
+      "task": "threshold",
+      "values": [
+        "49",
+        "51"
+      ],
+      "expected_answer": true,
+      "answer_label": "true",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3600,
+            "kind": "semantic_threshold_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1260
+      },
+      "semantic_wav_sha256": "f9ac65ac5759448ea970d2f24de1d0f9836a089ad52e4d138457be013e2c02ad"
+    },
+    {
+      "case_id": "case-2",
+      "group_id": "threshold-1",
+      "task": "threshold",
+      "values": [
+        "50",
+        "49"
+      ],
+      "expected_answer": false,
+      "answer_label": "false",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3600,
+            "kind": "semantic_threshold_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1260
+      },
+      "semantic_wav_sha256": "58ff313ee1f686388dea0ff020134c9f6f4fd7e6806e28cec60080f5338d775a"
+    },
+    {
+      "case_id": "case-3",
+      "group_id": "threshold-1",
+      "task": "threshold",
+      "values": [
+        "51",
+        "49"
+      ],
+      "expected_answer": true,
+      "answer_label": "true",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3600,
+            "kind": "semantic_threshold_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1260
+      },
+      "semantic_wav_sha256": "1777519581101e08ddee3c3e021ea599d5b7db1a72938d8e7b833763c53e97a7"
+    },
+    {
+      "case_id": "case-4",
+      "group_id": "endpoint_trend-0",
+      "task": "endpoint_trend",
+      "values": [
+        "51",
+        "50"
+      ],
+      "expected_answer": "falling",
+      "answer_label": "falling",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1260,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1440
+      },
+      "semantic_wav_sha256": "a20361e1481e071f55d09309284e83a53e1e3a32494d27ebbb5dcb9de40cc708"
+    },
+    {
+      "case_id": "case-5",
+      "group_id": "endpoint_trend-0",
+      "task": "endpoint_trend",
+      "values": [
+        "50",
+        "50"
+      ],
+      "expected_answer": "flat",
+      "answer_label": "flat",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1260,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1440
+      },
+      "semantic_wav_sha256": "601f5c036cc7cae3741dd5d4fc4f563e49c3c2353d240dd1cdd03c3f8ade76cb"
+    },
+    {
+      "case_id": "case-6",
+      "group_id": "endpoint_trend-0",
+      "task": "endpoint_trend",
+      "values": [
+        "50",
+        "51"
+      ],
+      "expected_answer": "rising",
+      "answer_label": "rising",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 720,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 900,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1080,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1260,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1440
+      },
+      "semantic_wav_sha256": "14dce76e9e44ca41e3bbde4d932539de20781023fb71d6b41663d4cca6f96345"
+    },
+    {
+      "case_id": "case-7",
+      "group_id": "endpoint_trend-1",
+      "task": "endpoint_trend",
+      "values": [
+        "51",
+        "49",
+        "50"
+      ],
+      "expected_answer": "falling",
+      "answer_label": "falling",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 960,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 1140,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1320,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1500,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1680
+      },
+      "semantic_wav_sha256": "9fdc3d897f564621002ff8b9022640660e323a73820eee22b4e824ab2861ab5c"
+    },
+    {
+      "case_id": "case-8",
+      "group_id": "endpoint_trend-1",
+      "task": "endpoint_trend",
+      "values": [
+        "50",
+        "49",
+        "50"
+      ],
+      "expected_answer": "flat",
+      "answer_label": "flat",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 960,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 1140,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1320,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1500,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1680
+      },
+      "semantic_wav_sha256": "92cc9099aa64c5f95d28e2c8fb0665b339ed8b3c4862d9b22453d4b5f7a7a158"
+    },
+    {
+      "case_id": "case-9",
+      "group_id": "endpoint_trend-1",
+      "task": "endpoint_trend",
+      "values": [
+        "50",
+        "49",
+        "51"
+      ],
+      "expected_answer": "rising",
+      "answer_label": "rising",
+      "base": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "semantic": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 960,
+            "duration_ms": 120,
+            "pitch_cents": 3900,
+            "kind": "semantic_endpoint_trend_header"
+          },
+          {
+            "onset_ms": 1140,
+            "duration_ms": 120,
+            "pitch_cents": 4800,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1320,
+            "duration_ms": 120,
+            "pitch_cents": 5400,
+            "kind": "semantic_answer"
+          },
+          {
+            "onset_ms": 1500,
+            "duration_ms": 120,
+            "pitch_cents": 6000,
+            "kind": "semantic_answer"
+          }
+        ],
+        "duration_ms": 1680
+      },
+      "semantic_wav_sha256": "641e3e5e99ceb3f896c8e01fd0c038f6848f25d4f6f9130da26718f81935f669"
+    }
+  ],
+  "participant_sessions": {
+    "session-a": [
+      {
+        "trial_id": "bc5796091d573d09",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/bc5796091d573d09.wav"
+      },
+      {
+        "trial_id": "20b53d238a2454df",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/20b53d238a2454df.wav"
+      },
+      {
+        "trial_id": "e0974de2154b7a42",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/e0974de2154b7a42.wav"
+      },
+      {
+        "trial_id": "d9fc432857c43328",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/d9fc432857c43328.wav"
+      },
+      {
+        "trial_id": "98498e7c46bfe462",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/98498e7c46bfe462.wav"
+      },
+      {
+        "trial_id": "b55dfb0c933d0452",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/b55dfb0c933d0452.wav"
+      },
+      {
+        "trial_id": "7370ae32a7329fec",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/7370ae32a7329fec.wav"
+      },
+      {
+        "trial_id": "1003d5289ea69f9b",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/1003d5289ea69f9b.wav"
+      },
+      {
+        "trial_id": "b3d4eced4a861507",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/b3d4eced4a861507.wav"
+      },
+      {
+        "trial_id": "1849d8dfbb8bebf1",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/1849d8dfbb8bebf1.wav"
+      },
+      {
+        "trial_id": "6411f9391682084f",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/6411f9391682084f.wav"
+      },
+      {
+        "trial_id": "752f8a3ad489069e",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/752f8a3ad489069e.wav"
+      },
+      {
+        "trial_id": "de3130af8c8039fb",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/de3130af8c8039fb.wav"
+      },
+      {
+        "trial_id": "563648adf3ad1856",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/563648adf3ad1856.wav"
+      },
+      {
+        "trial_id": "4adde52c12618590",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/4adde52c12618590.wav"
+      },
+      {
+        "trial_id": "08ad52859cd3ef8c",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/08ad52859cd3ef8c.wav"
+      },
+      {
+        "trial_id": "4ad991ff01721f9d",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/4ad991ff01721f9d.wav"
+      },
+      {
+        "trial_id": "20646937bd120c4b",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/20646937bd120c4b.wav"
+      },
+      {
+        "trial_id": "523bc5e067c5558c",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/523bc5e067c5558c.wav"
+      },
+      {
+        "trial_id": "874983a891bc1acd",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/874983a891bc1acd.wav"
+      }
+    ],
+    "session-b": [
+      {
+        "trial_id": "691d957a27557aaa",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/691d957a27557aaa.wav"
+      },
+      {
+        "trial_id": "b529247477a68e64",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/b529247477a68e64.wav"
+      },
+      {
+        "trial_id": "130a0ecde6a58e30",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/130a0ecde6a58e30.wav"
+      },
+      {
+        "trial_id": "d4d3cfc44b3b9c14",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/d4d3cfc44b3b9c14.wav"
+      },
+      {
+        "trial_id": "0a55dc94806ff69f",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/0a55dc94806ff69f.wav"
+      },
+      {
+        "trial_id": "668ff1a2e236b200",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/668ff1a2e236b200.wav"
+      },
+      {
+        "trial_id": "f02c1321852e09ea",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/f02c1321852e09ea.wav"
+      },
+      {
+        "trial_id": "b1f246fb415d8a46",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/b1f246fb415d8a46.wav"
+      },
+      {
+        "trial_id": "140ba9d7f9d77377",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/140ba9d7f9d77377.wav"
+      },
+      {
+        "trial_id": "510fefb339acf377",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/510fefb339acf377.wav"
+      },
+      {
+        "trial_id": "d31636fe3182ac3f",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/d31636fe3182ac3f.wav"
+      },
+      {
+        "trial_id": "0f8f3b5aca2761de",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/0f8f3b5aca2761de.wav"
+      },
+      {
+        "trial_id": "5cc242c61b3e1a63",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/5cc242c61b3e1a63.wav"
+      },
+      {
+        "trial_id": "878d5e1c6e6f1dcd",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/878d5e1c6e6f1dcd.wav"
+      },
+      {
+        "trial_id": "b43678590a7303a8",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/b43678590a7303a8.wav"
+      },
+      {
+        "trial_id": "2f5e72327a609323",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/2f5e72327a609323.wav"
+      },
+      {
+        "trial_id": "de5391fb57f64605",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/de5391fb57f64605.wav"
+      },
+      {
+        "trial_id": "6983c2aae5a914db",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/6983c2aae5a914db.wav"
+      },
+      {
+        "trial_id": "b966f72f2b217fd0",
+        "task": "threshold",
+        "prompt": "序列里是否至少有一个数值达到 51？",
+        "choices": [
+          "false",
+          "true"
+        ],
+        "audio": "audio/b966f72f2b217fd0.wav"
+      },
+      {
+        "trial_id": "7ba687657bf1f2e4",
+        "task": "endpoint_trend",
+        "prompt": "首尾已观测数值的趋势是什么？",
+        "choices": [
+          "falling",
+          "flat",
+          "rising",
+          "undefined"
+        ],
+        "audio": "audio/7ba687657bf1f2e4.wav"
+      }
+    ]
+  },
+  "researcher_keys": {
+    "session-a": [
+      {
+        "trial_id": "bc5796091d573d09",
+        "case_id": "case-1",
+        "group_id": "threshold-0",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "20b53d238a2454df",
+        "case_id": "case-5",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "e0974de2154b7a42",
+        "case_id": "case-3",
+        "group_id": "threshold-1",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "d9fc432857c43328",
+        "case_id": "case-2",
+        "group_id": "threshold-1",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "98498e7c46bfe462",
+        "case_id": "case-2",
+        "group_id": "threshold-1",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "b55dfb0c933d0452",
+        "case_id": "case-4",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "7370ae32a7329fec",
+        "case_id": "case-8",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "1003d5289ea69f9b",
+        "case_id": "case-3",
+        "group_id": "threshold-1",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "b3d4eced4a861507",
+        "case_id": "case-1",
+        "group_id": "threshold-0",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "1849d8dfbb8bebf1",
+        "case_id": "case-7",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "6411f9391682084f",
+        "case_id": "case-5",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "752f8a3ad489069e",
+        "case_id": "case-7",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "de3130af8c8039fb",
+        "case_id": "case-6",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "563648adf3ad1856",
+        "case_id": "case-9",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "4adde52c12618590",
+        "case_id": "case-4",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "08ad52859cd3ef8c",
+        "case_id": "case-8",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "4ad991ff01721f9d",
+        "case_id": "case-9",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "20646937bd120c4b",
+        "case_id": "case-0",
+        "group_id": "threshold-0",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "523bc5e067c5558c",
+        "case_id": "case-0",
+        "group_id": "threshold-0",
+        "repetition": 0,
+        "condition": "base",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "874983a891bc1acd",
+        "case_id": "case-6",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "base",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      }
+    ],
+    "session-b": [
+      {
+        "trial_id": "691d957a27557aaa",
+        "case_id": "case-1",
+        "group_id": "threshold-0",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "b529247477a68e64",
+        "case_id": "case-5",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "130a0ecde6a58e30",
+        "case_id": "case-3",
+        "group_id": "threshold-1",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "d4d3cfc44b3b9c14",
+        "case_id": "case-2",
+        "group_id": "threshold-1",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "0a55dc94806ff69f",
+        "case_id": "case-2",
+        "group_id": "threshold-1",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "668ff1a2e236b200",
+        "case_id": "case-4",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "f02c1321852e09ea",
+        "case_id": "case-8",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "b1f246fb415d8a46",
+        "case_id": "case-3",
+        "group_id": "threshold-1",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "140ba9d7f9d77377",
+        "case_id": "case-1",
+        "group_id": "threshold-0",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": true,
+        "answer_label": "true"
+      },
+      {
+        "trial_id": "510fefb339acf377",
+        "case_id": "case-7",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "d31636fe3182ac3f",
+        "case_id": "case-5",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "0f8f3b5aca2761de",
+        "case_id": "case-7",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "5cc242c61b3e1a63",
+        "case_id": "case-6",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "878d5e1c6e6f1dcd",
+        "case_id": "case-9",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "b43678590a7303a8",
+        "case_id": "case-4",
+        "group_id": "endpoint_trend-0",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "falling",
+        "answer_label": "falling"
+      },
+      {
+        "trial_id": "2f5e72327a609323",
+        "case_id": "case-8",
+        "group_id": "endpoint_trend-1",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "flat",
+        "answer_label": "flat"
+      },
+      {
+        "trial_id": "de5391fb57f64605",
+        "case_id": "case-9",
+        "group_id": "endpoint_trend-1",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      },
+      {
+        "trial_id": "6983c2aae5a914db",
+        "case_id": "case-0",
+        "group_id": "threshold-0",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "b966f72f2b217fd0",
+        "case_id": "case-0",
+        "group_id": "threshold-0",
+        "repetition": 0,
+        "condition": "semantic",
+        "expected_answer": false,
+        "answer_label": "false"
+      },
+      {
+        "trial_id": "7ba687657bf1f2e4",
+        "case_id": "case-6",
+        "group_id": "endpoint_trend-0",
+        "repetition": 1,
+        "condition": "semantic",
+        "expected_answer": "rising",
+        "answer_label": "rising"
+      }
+    ]
+  },
+  "session_assignment": {
+    "session-a": "base",
+    "session-b": "semantic"
+  },
+  "statistics": {
+    "source_series": 36,
+    "selected_groups": 4,
+    "cases": 10,
+    "trials_per_session": 20,
+    "balanced_within_each_group": true,
+    "participant_results": 0
+  },
+  "scope": "Preparation only. Sessions have matched original cases and order; one condition per participant avoids switching-condition carryover by design. Each group has equal repetitions per task answer and byte-identical base WAV. Participant sheets omit case values, expected answers and condition labels; cue availability is audible, so this does not claim participant blinding. No human outcome, effect size, power or perceptual benefit is established."
+}

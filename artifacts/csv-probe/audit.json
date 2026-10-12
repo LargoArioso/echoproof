@@ -1,0 +1,1460 @@
+{
+  "schema_version": 1,
+  "claim_type": "finite_task_audit",
+  "engine_version": "0.1.0",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "10",
+    "normalization": "per_series",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 100,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "domain": {
+    "series": [
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "2",
+        "4",
+        "6",
+        "4",
+        "2"
+      ],
+      [
+        "2",
+        "3",
+        "4",
+        "3",
+        "2"
+      ],
+      [
+        "3",
+        "5",
+        "7",
+        "5",
+        "3"
+      ],
+      [
+        "1/2",
+        "1",
+        "3/2",
+        "1",
+        "1/2"
+      ],
+      [
+        null,
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "0",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "3",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "299/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "301/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "-1/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1001/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "99/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "101/100",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "11",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        null,
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "3",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "299/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "301/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "-1/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "1001/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "199/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "201/100",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "12",
+        "3",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        null,
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "0",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "299/100",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "301/100",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "-1/100",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "1001/100",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "13",
+        "2",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        null,
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "3",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "299/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "301/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "-1/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "1001/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "199/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "201/100",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "12",
+        "1"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        null
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "0"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "3"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "299/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "301/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "-1/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "1001/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "99/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "101/100"
+      ],
+      [
+        "1",
+        "2",
+        "3",
+        "2",
+        "11"
+      ]
+    ],
+    "threshold": "3",
+    "provenance": {
+      "source": {
+        "kind": "csv",
+        "filename": "measurements.csv",
+        "column": "value",
+        "sha256": "0ba852e5e977427e7f119f95c8ef1e394db4be6c1e1a7a640a55c7136fc51be0",
+        "rows": 5
+      },
+      "baseline": [
+        "1",
+        "2",
+        "3",
+        "2",
+        "1"
+      ],
+      "method": "deterministic single-position mutations plus four positive affine transforms",
+      "coverage": "Only the listed candidates; not exhaustive over all real values or edits.",
+      "delta": "1/100"
+    }
+  },
+  "task_order": [
+    "threshold",
+    "endpoint_trend",
+    "peak_indices",
+    "missing_count",
+    "total"
+  ],
+  "search": {
+    "mode": "explicit_finite_corpus",
+    "series_count": 52,
+    "render_classes": 25,
+    "collision_classes": 10,
+    "equal_render_pairs": 122,
+    "identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f"
+  },
+  "tasks": {
+    "threshold": {
+      "ambiguous_render_classes": 1,
+      "affected_series": 15,
+      "disagreeing_pairs": 26,
+      "witness": {
+        "left": [
+          "3"
+        ],
+        "right": [
+          "3/2"
+        ],
+        "task": "threshold",
+        "threshold": "3",
+        "left_answer": true,
+        "right_answer": false,
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "1",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "right": [
+          "1/2",
+          "1",
+          "3/2",
+          "1",
+          "1/2"
+        ],
+        "task": "threshold",
+        "threshold": "3",
+        "left_answer": true,
+        "right_answer": false,
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 720,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 960,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 1200
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "1",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "right": [
+            "1/2",
+            "1",
+            "3/2",
+            "1",
+            "1/2"
+          ],
+          "task": "threshold",
+          "threshold": "3",
+          "left_answer": true,
+          "right_answer": false,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 720,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 960,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 1200
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "3"
+          ],
+          "right": [
+            "3/2"
+          ],
+          "task": "threshold",
+          "threshold": "3",
+          "left_answer": true,
+          "right_answer": false,
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "retained_left_indices": [
+          2
+        ],
+        "retained_right_indices": [
+          2
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    },
+    "endpoint_trend": {
+      "ambiguous_render_classes": 1,
+      "affected_series": 15,
+      "disagreeing_pairs": 48,
+      "witness": {
+        "left": [
+          "1",
+          "2",
+          "1"
+        ],
+        "right": [
+          "99/100",
+          "2",
+          "1"
+        ],
+        "task": "endpoint_trend",
+        "threshold": "3",
+        "left_answer": "flat",
+        "right_answer": "rising",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 720
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "1",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "right": [
+          "99/100",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "task": "endpoint_trend",
+        "threshold": "3",
+        "left_answer": "flat",
+        "right_answer": "rising",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 720,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 960,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 1200
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "1",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "right": [
+            "99/100",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "task": "endpoint_trend",
+          "threshold": "3",
+          "left_answer": "flat",
+          "right_answer": "rising",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 720,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 960,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 1200
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "1",
+            "2",
+            "1"
+          ],
+          "right": [
+            "99/100",
+            "2",
+            "1"
+          ],
+          "task": "endpoint_trend",
+          "threshold": "3",
+          "left_answer": "flat",
+          "right_answer": "rising",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 720
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          1,
+          2
+        ],
+        "retained_left_indices": [
+          0,
+          3,
+          4
+        ],
+        "retained_right_indices": [
+          0,
+          3,
+          4
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    },
+    "peak_indices": {
+      "ambiguous_render_classes": 4,
+      "affected_series": 12,
+      "disagreeing_pairs": 12,
+      "witness": {
+        "left": [
+          "3",
+          "3",
+          "1"
+        ],
+        "right": [
+          "299/100",
+          "3",
+          "1"
+        ],
+        "task": "peak_indices",
+        "threshold": "3",
+        "left_answer": [
+          0,
+          1
+        ],
+        "right_answer": [
+          1
+        ],
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 720
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "3",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "right": [
+          "299/100",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "task": "peak_indices",
+        "threshold": "3",
+        "left_answer": [
+          0,
+          2
+        ],
+        "right_answer": [
+          2
+        ],
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 720,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 960,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 1200
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "3",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "right": [
+            "299/100",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "task": "peak_indices",
+          "threshold": "3",
+          "left_answer": [
+            0,
+            2
+          ],
+          "right_answer": [
+            2
+          ],
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 720,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 960,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 1200
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "3",
+            "3",
+            "1"
+          ],
+          "right": [
+            "299/100",
+            "3",
+            "1"
+          ],
+          "task": "peak_indices",
+          "threshold": "3",
+          "left_answer": [
+            0,
+            1
+          ],
+          "right_answer": [
+            1
+          ],
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 720
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          1,
+          3
+        ],
+        "retained_left_indices": [
+          0,
+          2,
+          4
+        ],
+        "retained_right_indices": [
+          0,
+          2,
+          4
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    },
+    "missing_count": {
+      "ambiguous_render_classes": 0,
+      "affected_series": 0,
+      "disagreeing_pairs": 0,
+      "witness": null,
+      "original_witness": null,
+      "minimization_trace": null,
+      "status": "no_collision_in_explicit_corpus"
+    },
+    "total": {
+      "ambiguous_render_classes": 10,
+      "affected_series": 37,
+      "disagreeing_pairs": 102,
+      "witness": {
+        "left": [
+          "1"
+        ],
+        "right": [
+          "2"
+        ],
+        "task": "total",
+        "threshold": "3",
+        "left_answer": "1",
+        "right_answer": "2",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 240
+        },
+        "claim": "exact_render_collision",
+        "minimization": "paired-deletion 1-minimal"
+      },
+      "original_witness": {
+        "left": [
+          "1",
+          "2",
+          "3",
+          "2",
+          "1"
+        ],
+        "right": [
+          "2",
+          "4",
+          "6",
+          "4",
+          "2"
+        ],
+        "task": "total",
+        "threshold": "3",
+        "left_answer": "9",
+        "right_answer": "18",
+        "mapping": {
+          "domain_low": "0",
+          "domain_high": "10",
+          "normalization": "per_series",
+          "pitch_low_cents": 4800,
+          "pitch_high_cents": 8400,
+          "pitch_step_cents": 100,
+          "missing": "silence",
+          "stride": 1,
+          "note_ms": 180,
+          "slot_ms": 240
+        },
+        "render": {
+          "events": [
+            {
+              "onset_ms": 0,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 240,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 480,
+              "duration_ms": 180,
+              "pitch_cents": 8400,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 720,
+              "duration_ms": 180,
+              "pitch_cents": 6600,
+              "kind": "tone"
+            },
+            {
+              "onset_ms": 960,
+              "duration_ms": 180,
+              "pitch_cents": 4800,
+              "kind": "tone"
+            }
+          ],
+          "duration_ms": 1200
+        },
+        "claim": "exact_render_collision"
+      },
+      "minimization_trace": {
+        "schema_version": 1,
+        "claim_type": "paired_deletion_trace",
+        "original": {
+          "left": [
+            "1",
+            "2",
+            "3",
+            "2",
+            "1"
+          ],
+          "right": [
+            "2",
+            "4",
+            "6",
+            "4",
+            "2"
+          ],
+          "task": "total",
+          "threshold": "3",
+          "left_answer": "9",
+          "right_answer": "18",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 240,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 480,
+                "duration_ms": 180,
+                "pitch_cents": 8400,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 720,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              },
+              {
+                "onset_ms": 960,
+                "duration_ms": 180,
+                "pitch_cents": 4800,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 1200
+          },
+          "claim": "exact_render_collision"
+        },
+        "final": {
+          "left": [
+            "1"
+          ],
+          "right": [
+            "2"
+          ],
+          "task": "total",
+          "threshold": "3",
+          "left_answer": "1",
+          "right_answer": "2",
+          "mapping": {
+            "domain_low": "0",
+            "domain_high": "10",
+            "normalization": "per_series",
+            "pitch_low_cents": 4800,
+            "pitch_high_cents": 8400,
+            "pitch_step_cents": 100,
+            "missing": "silence",
+            "stride": 1,
+            "note_ms": 180,
+            "slot_ms": 240
+          },
+          "render": {
+            "events": [
+              {
+                "onset_ms": 0,
+                "duration_ms": 180,
+                "pitch_cents": 6600,
+                "kind": "tone"
+              }
+            ],
+            "duration_ms": 240
+          },
+          "claim": "exact_render_collision",
+          "minimization": "paired-deletion 1-minimal"
+        },
+        "removed_original_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "retained_left_indices": [
+          4
+        ],
+        "retained_right_indices": [
+          4
+        ],
+        "status": "one_minimal",
+        "audit_identity_sha256": "0db114ef1b109bdd925658540b21d58e44796bf547d3d4ff198ffd0137e4051f",
+        "scope": "Replayed paired deletions preserve exact event collision and task disagreement at every step. When paired deletion applies, the final witness is one-minimal, not globally shortest. Original domain membership requires a separately verified parent audit; source-file authenticity requires its own check."
+      },
+      "status": "collision_found"
+    }
+  },
+  "scope": "Exact event equality in EchoProof's discrete renderer. No human perceptual claim; no guarantee outside this finite grid or explicitly listed corpus."
+}

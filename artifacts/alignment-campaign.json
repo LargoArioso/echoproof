@@ -1,0 +1,18 @@
+{
+  "seed": 20261012,
+  "cases": 3000,
+  "outcomes": {
+    "impossible": 1790,
+    "preserved": 1210
+  },
+  "differences": 0,
+  "input_sha256": "e7890a9f671672ea44c67005bf31b2378943506ffa690a40fc1896e65345d4cf",
+  "elapsed_seconds": 1.8408,
+  "python": "3.9.6",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "source_sha256": {
+    "echoproof/multi_alignment.py": "4df9f73ece9ab9b65306e2ba4b6d800bc2322d17053eb1e05f78d3cf573567ec",
+    "tools/alignment_campaign.py": "66ec0fdc2360cfff102e1eb294dcdedb9b0521e94873fd5e592d66b772785807"
+  },
+  "scope": "Finite fixed-seed counterchecks, maximum eight pitch transitions. Independent direct solution of affine boundary-pair equations; no human experiment or proof of program correctness."
+}

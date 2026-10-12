@@ -1,0 +1,12 @@
+{
+  "name": "echoproof-erie-experiment",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Optional direct Erie compiler experiment; separate from the dependency-free Python core",
+  "dependencies": {
+    "d3": "7.9.0",
+    "d3-scale": "4.0.2",
+    "arquero": "5.4.0",
+    "vega-statistics": "2.0.0"
+  }
+}

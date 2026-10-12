@@ -1,0 +1,5977 @@
+{
+  "schema_version": 1,
+  "claim_type": "archived_threshold_partition_validation",
+  "source": {
+    "url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_annmean_mlo.csv",
+    "raw_sha256": "bdd956e8d7e05ebc3c61ac1f8f8c8cea4a505df56724fba5200b4eb1e0089b2b",
+    "credit": "Xin Lan, NOAA/GML, and Ralph Keeling, Scripps Institution of Oceanography; early measurements by C. David Keeling/SIO. Original archive comments retained.",
+    "units": "ppm"
+  },
+  "partition": {
+    "schema_version": 1,
+    "claim_type": "nonuniform_threshold_partition",
+    "original_mapping": {
+      "domain_low": "310",
+      "domain_high": "430",
+      "normalization": "fixed",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 1200,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "input_low": "310",
+    "input_high": "430",
+    "thresholds": [
+      "350",
+      "400",
+      "420"
+    ],
+    "cutpoints": [
+      "350",
+      "400",
+      "420"
+    ],
+    "available_pitches_cents": [
+      4800,
+      6000,
+      7200,
+      8400
+    ],
+    "lower_bound": {
+      "required_pitch_symbols": 4,
+      "singleton_representatives": [
+        "310",
+        "350",
+        "400",
+        "420"
+      ],
+      "distinct_answer_vectors": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "scope": "Exactly one pitch event per sample, fixed onset and duration, no other data-bearing channel. Bound follows from distinct singleton answer vectors."
+    },
+    "scope": "All positive-length series of real values in the declared closed interval, no missing samples. Monotone nonuniform bins, inclusive threshold boundaries, original pitch vocabulary and fixed timing retained. Each event preserves every requested threshold predicate, hence occurrence indices and counts as well as any/all decisions. Event-level sufficiency only; no human listening claim or numerical-value recovery.",
+    "status": "preserved",
+    "selected_pitches_cents": [
+      4800,
+      6000,
+      7200,
+      8400
+    ],
+    "reason": "Every requested nonconstant threshold is a bin boundary; the construction attains the scoped alphabet lower bound"
+  },
+  "windows": [
+    {
+      "years": [
+        1959,
+        1960,
+        1961
+      ],
+      "values": [
+        "315.98",
+        "316.91",
+        "317.64"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1960,
+        1961,
+        1962
+      ],
+      "values": [
+        "316.91",
+        "317.64",
+        "318.45"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1961,
+        1962,
+        1963
+      ],
+      "values": [
+        "317.64",
+        "318.45",
+        "318.99"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1962,
+        1963,
+        1964
+      ],
+      "values": [
+        "318.45",
+        "318.99",
+        "319.62"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1963,
+        1964,
+        1965
+      ],
+      "values": [
+        "318.99",
+        "319.62",
+        "320.04"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1964,
+        1965,
+        1966
+      ],
+      "values": [
+        "319.62",
+        "320.04",
+        "321.37"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1965,
+        1966,
+        1967
+      ],
+      "values": [
+        "320.04",
+        "321.37",
+        "322.18"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1966,
+        1967,
+        1968
+      ],
+      "values": [
+        "321.37",
+        "322.18",
+        "323.05"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1967,
+        1968,
+        1969
+      ],
+      "values": [
+        "322.18",
+        "323.05",
+        "324.62"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1968,
+        1969,
+        1970
+      ],
+      "values": [
+        "323.05",
+        "324.62",
+        "325.68"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1969,
+        1970,
+        1971
+      ],
+      "values": [
+        "324.62",
+        "325.68",
+        "326.32"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1970,
+        1971,
+        1972
+      ],
+      "values": [
+        "325.68",
+        "326.32",
+        "327.46"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1971,
+        1972,
+        1973
+      ],
+      "values": [
+        "326.32",
+        "327.46",
+        "329.68"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1972,
+        1973,
+        1974
+      ],
+      "values": [
+        "327.46",
+        "329.68",
+        "330.19"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1973,
+        1974,
+        1975
+      ],
+      "values": [
+        "329.68",
+        "330.19",
+        "331.13"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1974,
+        1975,
+        1976
+      ],
+      "values": [
+        "330.19",
+        "331.13",
+        "332.03"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1975,
+        1976,
+        1977
+      ],
+      "values": [
+        "331.13",
+        "332.03",
+        "333.84"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1976,
+        1977,
+        1978
+      ],
+      "values": [
+        "332.03",
+        "333.84",
+        "335.41"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1977,
+        1978,
+        1979
+      ],
+      "values": [
+        "333.84",
+        "335.41",
+        "336.84"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1978,
+        1979,
+        1980
+      ],
+      "values": [
+        "335.41",
+        "336.84",
+        "338.76"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1979,
+        1980,
+        1981
+      ],
+      "values": [
+        "336.84",
+        "338.76",
+        "340.12"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1980,
+        1981,
+        1982
+      ],
+      "values": [
+        "338.76",
+        "340.12",
+        "341.48"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1981,
+        1982,
+        1983
+      ],
+      "values": [
+        "340.12",
+        "341.48",
+        "343.15"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1982,
+        1983,
+        1984
+      ],
+      "values": [
+        "341.48",
+        "343.15",
+        "344.87"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1983,
+        1984,
+        1985
+      ],
+      "values": [
+        "343.15",
+        "344.87",
+        "346.35"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1984,
+        1985,
+        1986
+      ],
+      "values": [
+        "344.87",
+        "346.35",
+        "347.61"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1985,
+        1986,
+        1987
+      ],
+      "values": [
+        "346.35",
+        "347.61",
+        "349.31"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1986,
+        1987,
+        1988
+      ],
+      "values": [
+        "347.61",
+        "349.31",
+        "351.69"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 1,
+          "indices": [
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 2,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1987,
+        1988,
+        1989
+      ],
+      "values": [
+        "349.31",
+        "351.69",
+        "353.20"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 4800,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 2,
+          "indices": [
+            1,
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 1,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1988,
+        1989,
+        1990
+      ],
+      "values": [
+        "351.69",
+        "353.20",
+        "354.45"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1989,
+        1990,
+        1991
+      ],
+      "values": [
+        "353.20",
+        "354.45",
+        "355.70"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1990,
+        1991,
+        1992
+      ],
+      "values": [
+        "354.45",
+        "355.70",
+        "356.54"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1991,
+        1992,
+        1993
+      ],
+      "values": [
+        "355.70",
+        "356.54",
+        "357.21"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1992,
+        1993,
+        1994
+      ],
+      "values": [
+        "356.54",
+        "357.21",
+        "358.96"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1993,
+        1994,
+        1995
+      ],
+      "values": [
+        "357.21",
+        "358.96",
+        "360.97"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1994,
+        1995,
+        1996
+      ],
+      "values": [
+        "358.96",
+        "360.97",
+        "362.74"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1995,
+        1996,
+        1997
+      ],
+      "values": [
+        "360.97",
+        "362.74",
+        "363.88"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1996,
+        1997,
+        1998
+      ],
+      "values": [
+        "362.74",
+        "363.88",
+        "366.84"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1997,
+        1998,
+        1999
+      ],
+      "values": [
+        "363.88",
+        "366.84",
+        "368.54"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1998,
+        1999,
+        2000
+      ],
+      "values": [
+        "366.84",
+        "368.54",
+        "369.71"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        1999,
+        2000,
+        2001
+      ],
+      "values": [
+        "368.54",
+        "369.71",
+        "371.32"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2000,
+        2001,
+        2002
+      ],
+      "values": [
+        "369.71",
+        "371.32",
+        "373.45"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2001,
+        2002,
+        2003
+      ],
+      "values": [
+        "371.32",
+        "373.45",
+        "375.98"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2002,
+        2003,
+        2004
+      ],
+      "values": [
+        "373.45",
+        "375.98",
+        "377.70"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2003,
+        2004,
+        2005
+      ],
+      "values": [
+        "375.98",
+        "377.70",
+        "379.98"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2004,
+        2005,
+        2006
+      ],
+      "values": [
+        "377.70",
+        "379.98",
+        "382.09"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2005,
+        2006,
+        2007
+      ],
+      "values": [
+        "379.98",
+        "382.09",
+        "384.02"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2006,
+        2007,
+        2008
+      ],
+      "values": [
+        "382.09",
+        "384.02",
+        "385.83"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2007,
+        2008,
+        2009
+      ],
+      "values": [
+        "384.02",
+        "385.83",
+        "387.64"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2008,
+        2009,
+        2010
+      ],
+      "values": [
+        "385.83",
+        "387.64",
+        "390.10"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2009,
+        2010,
+        2011
+      ],
+      "values": [
+        "387.64",
+        "390.10",
+        "391.85"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2010,
+        2011,
+        2012
+      ],
+      "values": [
+        "390.10",
+        "391.85",
+        "394.06"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2011,
+        2012,
+        2013
+      ],
+      "values": [
+        "391.85",
+        "394.06",
+        "396.74"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2012,
+        2013,
+        2014
+      ],
+      "values": [
+        "394.06",
+        "396.74",
+        "398.81"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2013,
+        2014,
+        2015
+      ],
+      "values": [
+        "396.74",
+        "398.81",
+        "401.01"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 1,
+          "indices": [
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 2,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2014,
+        2015,
+        2016
+      ],
+      "values": [
+        "398.81",
+        "401.01",
+        "404.41"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 2,
+          "indices": [
+            1,
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 1,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2015,
+        2016,
+        2017
+      ],
+      "values": [
+        "401.01",
+        "404.41",
+        "406.76"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2016,
+        2017,
+        2018
+      ],
+      "values": [
+        "404.41",
+        "406.76",
+        "408.72"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2017,
+        2018,
+        2019
+      ],
+      "values": [
+        "406.76",
+        "408.72",
+        "411.65"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2018,
+        2019,
+        2020
+      ],
+      "values": [
+        "408.72",
+        "411.65",
+        "414.21"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "values": [
+        "411.65",
+        "414.21",
+        "416.41"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2020,
+        2021,
+        2022
+      ],
+      "values": [
+        "414.21",
+        "416.41",
+        "418.53"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 0,
+          "indices": [],
+          "any": false,
+          "all": false,
+          "first_index": null,
+          "last_index": null
+        }
+      }
+    },
+    {
+      "years": [
+        2021,
+        2022,
+        2023
+      ],
+      "values": [
+        "416.41",
+        "418.53",
+        "421.08"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 1,
+          "indices": [
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 2,
+          "last_index": 2
+        }
+      }
+    },
+    {
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "values": [
+        "418.53",
+        "421.08",
+        "424.61"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 2,
+          "indices": [
+            1,
+            2
+          ],
+          "any": true,
+          "all": false,
+          "first_index": 1,
+          "last_index": 2
+        }
+      }
+    },
+    {
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "values": [
+        "421.08",
+        "424.61",
+        "427.35"
+      ],
+      "original_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "partition_render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 8400,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "threshold_profiles": {
+        "350": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "400": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        },
+        "420": {
+          "sample_count": 3,
+          "at_or_above_count": 3,
+          "indices": [
+            0,
+            1,
+            2
+          ],
+          "any": true,
+          "all": true,
+          "first_index": 0,
+          "last_index": 2
+        }
+      }
+    }
+  ],
+  "selected_examples": {
+    "350": {
+      "left_window_index": 15,
+      "right_window_index": 27
+    },
+    "400": {
+      "left_window_index": 42,
+      "right_window_index": 54
+    },
+    "420": {
+      "left_window_index": 60,
+      "right_window_index": 62
+    }
+  },
+  "statistics": {
+    "observations": 67,
+    "windows": 65,
+    "original_render_classes": 10,
+    "partition_render_classes": 10,
+    "profile_disagreeing_pairs": {
+      "350": {
+        "original": 179,
+        "partition": 0
+      },
+      "400": {
+        "original": 53,
+        "partition": 0
+      },
+      "420": {
+        "original": 9,
+        "partition": 0
+      }
+    },
+    "profile_decode_failures": 0
+  },
+  "scope": "Every unmodified consecutive three-year window in the supplied archived annual observations. Original mapping here is fixed 310..430, not per-window normalization. Profile means exact rounded sample positions and counts, not exposure duration or risk. Relative time only; absolute years/ppm are not encoded. Source archive consistency and event-level results; no human hearing, data-source authenticity, or full real chart claim."
+}

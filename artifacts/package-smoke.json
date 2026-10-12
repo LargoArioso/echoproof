@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "archive_sha256": "72c35c69819fdb32a05952aa3697d273a34ca691f62f3142edc53ef84b5d2b79",
+  "manifest_files_verified": 453,
+  "imported_module_path": "<ISOLATED_RUN>/echoproof/echoproof/__init__.py",
+  "command": [
+    "python3",
+    "tools/reproduce.py",
+    "--out",
+    "<ISOLATED_RUN>/reproduced",
+    "--tests",
+    "--recordings"
+  ],
+  "reproduction_started": true,
+  "artifact_validation": {
+    "exit_code": 0,
+    "stdout": "{\n  \"verified_certificates\": 79,\n  \"verified_complete_finite_audits\": 25,\n  \"deletion_traces_with_parent_membership\": 19,\n  \"study_trial_wav_files_verified\": 40,\n  \"real_data_partition_windows_verified\": 65,\n  \"figure_prior_points_verified\": 21,\n  \"verified_recording_witnesses_backend_not_rerun\": 12,\n  \"real_data_window_pairs_verified_against_archive\": 1,\n  \"html_pages\": 40,\n  \"embedded_wav_payloads\": 108,\n  \"valid_local_links\": 114,\n  \"visual_inspection\": \"not performed: local browser access blocked\"\n}\n",
+    "stderr": ""
+  },
+  "exit_code": 0,
+  "stdout": "{\n  \"output\": \"<ISOLATED_RUN>/reproduced\",\n  \"stages_passed\": 24,\n  \"external_backend_rerun\": false,\n  \"entry\": \"<ISOLATED_RUN>/reproduced/artifacts/demo/index.html\"\n}\n",
+  "stderr": "",
+  "stages_passed": 24,
+  "source_sha256": {
+    "echoproof/__init__.py": "18af5c18aa07af441b1a525fc1912b0dfd55f7330f094fb4841466a6884ea6b5",
+    "echoproof/__main__.py": "79ee6f134c5c5193377cf9b189cbdcc3e2095e49ba9cec310114441c15a917c4",
+    "echoproof/alignment.py": "2fb00579d5cbba21642c1cbc0da08e5a6d19d12f3c885cf3f8b405a9c3c8c327",
+    "echoproof/audio.py": "d7873429674df97e346c89b26be1cbc14045ee8955ed828896642d9390c2eda9",
+    "echoproof/audit.py": "2de4d0c5ad414e6a9bbcbb0dcc0d760ea87827655b8211dbc0c03ffa2416763b",
+    "echoproof/cli.py": "8040499354325d1e2aade64fcad0c96638f45c1a896cf79c17b6c9548a6d1a17",
+    "echoproof/compiled.py": "bf4b15747586a8ba48a0f6450703427ef3a7ab1315bf6487b3767e5036a53a73",
+    "echoproof/contracts.py": "f1facb54f688eb1efc5b3d7b35b0b067d67ef3c93a8c5e749f9b1285d7339ec0",
+    "echoproof/cues.py": "349c11e8fe437e29a53a0d8d7108e56309d1d5610399cd33a08f7a869638996c",
+    "echoproof/decision.py": "a9c3055af32f90b1aad636cc0276a0af1acf37d8b8685d1aeb5459012259c54c",
+    "echoproof/diagnosis.py": "1fb3d269524c073422b8a0fe88c41ac6aa1108bacb2315e81deb1c89cba96eb9",
+    "echoproof/interval_tasks.py": "34217746bc47d9d987e3d2d7d802d5bf3b8c7abf54a61a5b2c25ea4e8559972a",
+    "echoproof/intervals.py": "1bbc39fe4074aca84c9d88dbde80fc265f84d2bc8485e650150f36c513c4dd78",
+    "echoproof/model.py": "5755f4b9c45050fc9137aeaa9c1178e6cef5dde249f9fc619ee9b2a25bfe6c7f",
+    "echoproof/multi_alignment.py": "c561e3cf90384b99a4b1cc3cc720b74042856e190e6713a95362ceddf2589b0b",
+    "echoproof/partition.py": "5e74806e54ffbcbb6629df3eb9e7e397a38f4163104f2c8a5fd11b7195ccf5a2",
+    "echoproof/probe.py": "a5943d705d8bfd67aaee0aa3caa182d61cf94f6d3a16e4a86eb8b3984b6eb8d5",
+    "echoproof/report.py": "473ae977e200a2f8d466b1fefda2d7dbf04f435d06d7cfe368c8baf8d4d22613",
+    "echoproof/semantic_cues.py": "17beb2d41c8ba2f2dc88cdf823520e444e3a729349f3b2ce3cbd067653aaf15b",
+    "echoproof/serialization.py": "15709683c90354e85e7c8bc6359c569b539594f98b2497151f8e5ecdbee66315",
+    "echoproof/study.py": "3a72b6246e9de0a68cf58b70c6699dc8a2277d2f9aa885ec3c79592dc3c4f3e6",
+    "echoproof/study_export.py": "5cf336923c79637dba60d1d29b22090ed40acbf0b186164340919d934f6cdded",
+    "echoproof/tasks.py": "d8dd80ed701c73952f9d0c0037079202c6889c4ded30641dda4fd92972a46ec8",
+    "echoproof/trace.py": "ffeb867db5fdd4c2c706004aa79876d5d6da19fc16e6ea69908c27da38477512",
+    "echoproof/uncertainty.py": "fc1e065f25ab306da45725921cd3ea4ec0ef01eaf9f0ec526e2fbf2df34621bf"
+  },
+  "automated_test_output": "----------------------------------------------------------------------\nRan 174 tests in 8.874s\n\nOK\n",
+  "scope": "This exact local archive was extracted, checked against its included manifest, its packaged artifact certificates replayed, and its source tested independently of the original source path. The manifest checks consistency, not author authenticity. Saved recordings are rechecked only when requested; no external backend, network, browser visual or human hearing validation. This log is outside the tested archive.",
+  "publication_redaction": {
+    "applied": true,
+    "scope": "Machine-specific absolute paths only; commands/output are not verbatim raw logs. Status, counts and SHA-256 values retained.",
+    "placeholders": [
+      "<PROJECT_ROOT>",
+      "<ISOLATED_RUN>",
+      "<TEMP_OUTPUT>"
+    ]
+  }
+}

@@ -1,0 +1,1682 @@
+{
+  "schema_version": 1,
+  "claim_type": "finite_prior_decision_bound",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "100",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "domain": {
+    "levels": [
+      "49",
+      "50",
+      "51"
+    ],
+    "lengths": [
+      2,
+      3
+    ],
+    "include_missing": false,
+    "threshold": "51"
+  },
+  "tasks": [
+    "threshold",
+    "endpoint_trend",
+    "peak_indices"
+  ],
+  "threshold": "51",
+  "representation": {
+    "kind": "base"
+  },
+  "prior": {
+    "kind": "uniform_distinct_inputs",
+    "total_mass": "36"
+  },
+  "classes": [
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "input_indices": [
+        0
+      ],
+      "input_mass": "1",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "flat",
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "1"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            1
+          ],
+          "correct_mass": "1"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            0,
+            1
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "input_indices": [
+        1,
+        2
+      ],
+      "input_mass": "2",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "rising",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "rising",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": [
+            1
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "rising",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "rising",
+          [
+            1
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "input_indices": [
+        3,
+        6
+      ],
+      "input_mass": "2",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "falling",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": [
+            0
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "falling",
+          [
+            0
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 480
+      },
+      "input_indices": [
+        4,
+        5,
+        7,
+        8
+      ],
+      "input_mass": "4",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 3,
+              "input_mass": "3"
+            }
+          ],
+          "optimal_prediction": true,
+          "correct_mass": "3"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": "flat",
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": "rising",
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                1
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            1
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            0,
+            1
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        9
+      ],
+      "input_mass": "1",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "flat",
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "1"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                1,
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            1,
+            2
+          ],
+          "correct_mass": "1"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        10,
+        11
+      ],
+      "input_mass": "2",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "rising",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "rising",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                2
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": [
+            2
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "rising",
+              [
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "rising",
+          [
+            2
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        12,
+        15
+      ],
+      "input_mass": "2",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "flat",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": [
+            1
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            1
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        13,
+        14,
+        16,
+        17
+      ],
+      "input_mass": "4",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 3,
+              "input_mass": "3"
+            }
+          ],
+          "optimal_prediction": true,
+          "correct_mass": "3"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "rising",
+              "input_count": 4,
+              "input_mass": "4"
+            }
+          ],
+          "optimal_prediction": "rising",
+          "correct_mass": "4"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                1,
+                2
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            1,
+            2
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "rising",
+              [
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "rising",
+          [
+            1,
+            2
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        18,
+        27
+      ],
+      "input_mass": "2",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": false,
+          "correct_mass": "1"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "falling",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": [
+            0
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "falling",
+          [
+            0
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        19,
+        20,
+        28,
+        29
+      ],
+      "input_mass": "4",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 3,
+              "input_mass": "3"
+            }
+          ],
+          "optimal_prediction": true,
+          "correct_mass": "3"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": "flat",
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": "rising",
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "2"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                2
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            2
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                0,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                0,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            0,
+            2
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 6000,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        21,
+        24,
+        30,
+        33
+      ],
+      "input_mass": "4",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 3,
+              "input_mass": "3"
+            }
+          ],
+          "optimal_prediction": true,
+          "correct_mass": "3"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 4,
+              "input_mass": "4"
+            }
+          ],
+          "optimal_prediction": "falling",
+          "correct_mass": "4"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                1
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            1
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "falling",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "falling",
+          [
+            0,
+            1
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    },
+    {
+      "render": {
+        "events": [
+          {
+            "onset_ms": 0,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 240,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          },
+          {
+            "onset_ms": 480,
+            "duration_ms": 180,
+            "pitch_cents": 7200,
+            "kind": "tone"
+          }
+        ],
+        "duration_ms": 720
+      },
+      "input_indices": [
+        22,
+        23,
+        25,
+        26,
+        31,
+        32,
+        34,
+        35
+      ],
+      "input_mass": "8",
+      "tasks": {
+        "threshold": {
+          "answers": [
+            {
+              "answer": false,
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": true,
+              "input_count": 7,
+              "input_mass": "7"
+            }
+          ],
+          "optimal_prediction": true,
+          "correct_mass": "7"
+        },
+        "endpoint_trend": {
+          "answers": [
+            {
+              "answer": "falling",
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": "flat",
+              "input_count": 4,
+              "input_mass": "4"
+            },
+            {
+              "answer": "rising",
+              "input_count": 2,
+              "input_mass": "2"
+            }
+          ],
+          "optimal_prediction": "flat",
+          "correct_mass": "4"
+        },
+        "peak_indices": {
+          "answers": [
+            {
+              "answer": [
+                0,
+                1,
+                2
+              ],
+              "input_count": 2,
+              "input_mass": "2"
+            },
+            {
+              "answer": [
+                0,
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                0,
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                0
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                1,
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                1
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            },
+            {
+              "answer": [
+                2
+              ],
+              "input_count": 1,
+              "input_mass": "1"
+            }
+          ],
+          "optimal_prediction": [
+            0,
+            1,
+            2
+          ],
+          "correct_mass": "2"
+        }
+      },
+      "joint": {
+        "answers": [
+          {
+            "answer": [
+              false,
+              "flat",
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0,
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "falling",
+              [
+                0
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                0,
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                0,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "flat",
+              [
+                1
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                1,
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          },
+          {
+            "answer": [
+              true,
+              "rising",
+              [
+                2
+              ]
+            ],
+            "input_count": 1,
+            "input_mass": "1"
+          }
+        ],
+        "optimal_prediction": [
+          false,
+          "flat",
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "correct_mass": "1"
+      }
+    }
+  ],
+  "statistics": {
+    "distinct_inputs": 36,
+    "render_classes": 12,
+    "zero_mass_inputs": 0,
+    "positive_mass_render_classes": 12,
+    "weighted_mean_duration_ms": "660",
+    "maximum_duration_ms": 720,
+    "pitch_vocabulary_cents": [
+      6000,
+      7200
+    ]
+  },
+  "task_bounds": {
+    "threshold": {
+      "maximum_correct_mass": "26",
+      "minimum_error_mass": "10",
+      "maximum_accuracy": "13/18",
+      "minimum_error_probability": "5/18",
+      "no_event_maximum_accuracy": "2/3",
+      "no_event_optimal_prediction": true
+    },
+    "endpoint_trend": {
+      "maximum_correct_mass": "28",
+      "minimum_error_mass": "8",
+      "maximum_accuracy": "7/9",
+      "minimum_error_probability": "2/9",
+      "no_event_maximum_accuracy": "1/3",
+      "no_event_optimal_prediction": "falling"
+    },
+    "peak_indices": {
+      "maximum_correct_mass": "22",
+      "minimum_error_mass": "14",
+      "maximum_accuracy": "11/18",
+      "minimum_error_probability": "7/18",
+      "no_event_maximum_accuracy": "2/9",
+      "no_event_optimal_prediction": [
+        0
+      ]
+    }
+  },
+  "joint_bound": {
+    "maximum_correct_mass": "12",
+    "minimum_error_mass": "24",
+    "maximum_accuracy": "1/3",
+    "minimum_error_probability": "2/3",
+    "no_event_maximum_accuracy": "1/6",
+    "no_event_optimal_prediction": [
+      true,
+      "falling",
+      [
+        0
+      ]
+    ]
+  },
+  "proof": "An event-only decoder must choose one label per render class. It can correctly cover at most the largest label mass in that class; the saved majority-label lookup attains this. Sum those maxima and divide by the declared total mass. Randomization cannot improve zero-one expected accuracy.",
+  "scope": "Exact optimum under the declared finite input prior and exact events, with no input identity, dates, numeric labels or other side information. Uniform distinct-input weights are a chosen analysis assumption, not observed population frequencies. Weighted priors are caller declarations, not estimated probabilities. Joint score requires all listed answers correct together. Zero-weight inputs do not affect accuracy, so perfect accuracy does not certify their recoverability. No source authenticity, human accuracy, hearing model, training benefit or held-out generalization claim."
+}

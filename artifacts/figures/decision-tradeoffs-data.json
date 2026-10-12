@@ -1,0 +1,163 @@
+{
+  "comparison_sha256": "e23f9075fbe77423f70073e1fa6bc34c6f70b37f6a49f1cd88c00e4e404e1926",
+  "comparison_metrics": {
+    "Original events": {
+      "maximum_joint_accuracy": "1/2",
+      "weighted_mean_duration_ms": "660",
+      "used_pitch_count": 2
+    },
+    "Conditional binary cues": {
+      "maximum_joint_accuracy": "1",
+      "weighted_mean_duration_ms": "1260",
+      "used_pitch_count": 5
+    },
+    "Fixed semantic cues": {
+      "maximum_joint_accuracy": "1",
+      "weighted_mean_duration_ms": "2400",
+      "used_pitch_count": 6
+    },
+    "Nonuniform partition": {
+      "maximum_joint_accuracy": "1",
+      "weighted_mean_duration_ms": "660",
+      "used_pitch_count": 3
+    }
+  },
+  "prior_example": {
+    "mapping": {
+      "domain_low": "0",
+      "domain_high": "100",
+      "normalization": "fixed",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 1200,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "domain": {
+      "series": [
+        [
+          "50"
+        ],
+        [
+          "51"
+        ]
+      ],
+      "threshold": "51"
+    },
+    "weight_order": [
+      "threshold_false_input",
+      "threshold_true_input"
+    ],
+    "samples": [
+      {
+        "true_input_mass": "0",
+        "original_maximum_accuracy": "1",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1/20",
+        "original_maximum_accuracy": "19/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1/10",
+        "original_maximum_accuracy": "9/10",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "3/20",
+        "original_maximum_accuracy": "17/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1/5",
+        "original_maximum_accuracy": "4/5",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1/4",
+        "original_maximum_accuracy": "3/4",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "3/10",
+        "original_maximum_accuracy": "7/10",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "7/20",
+        "original_maximum_accuracy": "13/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "2/5",
+        "original_maximum_accuracy": "3/5",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "9/20",
+        "original_maximum_accuracy": "11/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1/2",
+        "original_maximum_accuracy": "1/2",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "11/20",
+        "original_maximum_accuracy": "11/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "3/5",
+        "original_maximum_accuracy": "3/5",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "13/20",
+        "original_maximum_accuracy": "13/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "7/10",
+        "original_maximum_accuracy": "7/10",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "3/4",
+        "original_maximum_accuracy": "3/4",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "4/5",
+        "original_maximum_accuracy": "4/5",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "17/20",
+        "original_maximum_accuracy": "17/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "9/10",
+        "original_maximum_accuracy": "9/10",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "19/20",
+        "original_maximum_accuracy": "19/20",
+        "cued_maximum_accuracy": "1"
+      },
+      {
+        "true_input_mass": "1",
+        "original_maximum_accuracy": "1",
+        "cued_maximum_accuracy": "1"
+      }
+    ]
+  },
+  "producer_sha256": "5b58a819ab1ff39aa11003f9b4c63491ea8529459c66905b868bb4c17c611e14",
+  "scope": "Plot values computed from verified comparison and exact decision_bound calls. Connecting sampled prior values is illustrative; no human or population data."
+}

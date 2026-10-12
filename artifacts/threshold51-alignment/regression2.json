@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "claim_type": "continuous_interval_threshold",
+  "mapping": {
+    "domain_low": "0",
+    "domain_high": "102",
+    "normalization": "fixed",
+    "pitch_low_cents": 4800,
+    "pitch_high_cents": 8400,
+    "pitch_step_cents": 1200,
+    "missing": "silence",
+    "stride": 1,
+    "note_ms": 180,
+    "slot_ms": 240
+  },
+  "threshold": "250/3",
+  "input_low": "0",
+  "input_high": "100",
+  "assumptions": [
+    "no missing samples",
+    "positive-length series",
+    "fixed scale",
+    "stride = 1"
+  ],
+  "scope": "All real sample values in the declared closed interval, under EchoProof's exact mapping; event-level result, not a listening study.",
+  "status": "collision_found",
+  "reason": "A single pitch cell contains values on both sides of the threshold.",
+  "witness": {
+    "left": [
+      "403/6"
+    ],
+    "right": [
+      "250/3"
+    ],
+    "task": "threshold",
+    "threshold": "250/3",
+    "left_answer": false,
+    "right_answer": true,
+    "mapping": {
+      "domain_low": "0",
+      "domain_high": "102",
+      "normalization": "fixed",
+      "pitch_low_cents": 4800,
+      "pitch_high_cents": 8400,
+      "pitch_step_cents": 1200,
+      "missing": "silence",
+      "stride": 1,
+      "note_ms": 180,
+      "slot_ms": 240
+    },
+    "render": {
+      "events": [
+        {
+          "onset_ms": 0,
+          "duration_ms": 180,
+          "pitch_cents": 7200,
+          "kind": "tone"
+        }
+      ],
+      "duration_ms": 240
+    },
+    "claim": "exact_render_collision"
+  }
+}
